@@ -42,16 +42,16 @@ jobs:
           name: docs-dist
           path: docs/.vitepress/dist
 
-       - name: Clear remote docs directory
-         uses: appleboy/ssh-action@v0
-         with:
-           host: ${{ secrets.SSH_HOST }}
-           username: ${{ secrets.SSH_USER }}
-           key: ${{ secrets.SSH_PRIVATE_KEY }}
-           port: ${{ secrets.SSH_PORT }}
-           script: |
-             rm -rf /var/customers/webs/p4g/docs/*
-             rm -rf /var/customers/webs/p4g/docs/.* 2>/dev/null || true
+      - name: Clear remote docs directory
+        uses: appleboy/ssh-action@v0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            rm -rf /var/customers/webs/p4g/docs/*
+            rm -rf /var/customers/webs/p4g/docs/.* 2>/dev/null || true
 
       - name: Deploy to docs.p4g.cz via SCP
         uses: appleboy/scp-action@v1
@@ -62,4 +62,3 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           source: "docs/.vitepress/dist/*"
           target: "/var/customers/webs/p4g/docs"
-          # rm: true   # <-- zcela odstraněno
