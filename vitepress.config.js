@@ -9,5 +9,5 @@ export default {
     ],
   },
   outDir: ".vitepress/dist",
-  base: "/",
+  base: "/docs/",
 };
