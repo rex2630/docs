@@ -28,5 +28,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           source: "docs/.vitepress/dist/*"
-          target: "/"
+          target: "/var/customers/webs/p4g/docs/"
           strip_components: 3
