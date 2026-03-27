@@ -8,6 +8,5 @@ export default {
       { text: "Docs", link: "/intro" },
     ],
   },
-  outDir: "docs/.vitepress/dist",
   base: "/docs/",
 };
