@@ -1,4 +1,3 @@
-// docs/vitepress.config.js
 export default {
   title: "Portal4Gamers Docs",
   description: "Documentation for Portal4Gamers",
@@ -9,6 +8,6 @@ export default {
       { text: "Docs", link: "/intro" },
     ],
   },
-  outDir: ".vitepress/dist", // kam se buildne
-  base: "/docs/",                 // docs.p4g.cz je root
+  outDir: ".vitepress/dist",
+  base: "/",
 };
