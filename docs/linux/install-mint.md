@@ -111,5 +111,5 @@ After logging in, the system will greet you with a **Welcome Screen**. We recomm
 - Opening **Update Manager** and clicking **Refresh** → **Install Updates**
 
 ::: tip You're done! 🎉
-Linux Mint is now installed. Head over to the [App Alternatives](/linux/apps) page to find replacements for your favourite Windows apps.
+Linux Mint is now installed. Head over to the [App Alternatives](/linux/alternatives) page to find replacements for your favourite Windows apps.
 :::
