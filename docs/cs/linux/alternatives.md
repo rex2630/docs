@@ -79,13 +79,3 @@ Photoshop nemá nativní linuxovou verzi. GIMP pokryje většinu případů pou�
 ::: tip Nejdřív ověř kompatibilitu
 Před přechodem zkontroluj na [ProtonDB](https://www.protondb.com), jak dobře tvé hry na Linuxu běží. Většina populárních titulů funguje skvěle, zejména na Fedoře s aktuálními ovladači.
 :::
-
-## Systémové nástroje
-
-| Windows | Alternativa pro Linux | Poznámka |
-|---|---|---|
-| Správce úloh | [GNOME Sledování systému](https://wiki.gnome.org/Apps/SystemMonitor) / `htop` | Vestavěný nebo terminálový |
-| Ovládací panely | Nastavení GNOME / Nastavení systému KDE | Závisí na tvém desktopovém prostředí |
-| Průzkumník | Nautilus / Dolphin / Thunar | Závisí na tvém desktopovém prostředí |
-| 7-Zip | [File Roller](https://wiki.gnome.org/Apps/FileRoller) / [PeaZip](https://peazip.github.io) | Správci archivů |
-| WinRAR | [PeaZip](https://peazip.github.io) | Zdarma, podporuje extrakci RAR |
