@@ -7,5 +7,6 @@ export default defineConfig({
   locales: {
     root: en,
     cs: cs,
+    pl: pl,
   },
 });
