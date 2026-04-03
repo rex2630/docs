@@ -27,6 +27,7 @@ No changes needed here — all major browsers are available on Linux.
 | Firefox | [Firefox](https://www.mozilla.org/firefox/) | ✅ | Pre-installed on most distros |
 | Edge | [Edge](https://www.microsoft.com/edge) | ✅ | Available via Flatpak |
 | Brave | [Brave](https://brave.com) | ✅ | Available via Flatpak |
+| Opera | [Brave](https://www.opera.com/download) | ✅ | Available via Flatpak |
 
 ## Office & Productivity
 
