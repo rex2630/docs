@@ -25,7 +25,6 @@ export const cs = {
           text: "Linux",
           items: [
             { text: "Rychlý start", link: "/cs/linux/" },
-            { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
           ],
         },
         {
@@ -34,6 +33,12 @@ export const cs = {
             { text: "Linux Mint", link: "/cs/linux/install-mint" },
             { text: "Ubuntu", link: "/cs/linux/install-ubuntu" },
             { text: "Fedora", link: "/cs/linux/install-fedora" },
+          ],
+        },
+        {
+          text: "Software",
+          items: [
+            { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
           ],
         },
       ],
