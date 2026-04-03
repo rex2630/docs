@@ -18,7 +18,7 @@ export default {
             text: "Linux",
             items: [
               { text: "Quick Start Guide", link: "/linux/" },
-              { text: "Test Category 2", link: "/linux/test" },
+              { text: "Windows App Alternatives", link: "/linux/alternatives" },
             ],
           },
         ],
@@ -28,7 +28,7 @@ export default {
               text: "Linux",
               items: [
                 { text: "Quick Start", link: "/linux/" },
-                { text: "Test Category 2", link: "/linux/test" },
+                { text: "Windows App Alternatives", link: "/linux/alternatives" },
               ],
             },
           ],
@@ -53,7 +53,7 @@ export default {
             text: "Linux",
             items: [
               { text: "Rychlý start", link: "/cs/linux/" },
-              { text: "Testovací kategorie 2", link: "/cs/linux/test" },
+              { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
             ],
           },
         ],
@@ -63,7 +63,7 @@ export default {
               text: "Linux",
               items: [
                 { text: "Rychlý start", link: "/cs/linux/" },
-                { text: "Testovací kategorie 2", link: "/cs/linux/test" },
+                { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
               ],
             },
           ],
