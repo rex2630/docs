@@ -1,9 +1,9 @@
 ---
-title: Průvodce rychlým startem
+title: Průvodce rychlým přechodem na Linux
 description: Přecházíš z Windows na Linux? Tady je vše, co potřebuješ vědět pro začátek.
 ---
 
-# Průvodce rychlým startem
+# Průvodce rychlým přechodem na Linux
 
 Pravděpodobně jsi na této stránce, protože přemýšlíš o přechodu z Windows na Linux, ale nevíš, kde začít. Neboj se — pokusím se to co nejvíce usnadnit.
 
