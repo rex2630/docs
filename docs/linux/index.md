@@ -73,5 +73,5 @@ Steam's **Proton** compatibility layer lets you play a huge library of Windows-o
 The Linux community is very welcoming to newcomers. Here are the best places to ask questions:
 
 - [r/linux4noobs](https://reddit.com/r/linux4noobs) — beginner-friendly Reddit community
-- [r/linuxgaming](https://reddit.com/r/linuxgaming) — if you're coming for the gaming side
+- [r/linux_gaming](https://www.reddit.com/r/linux_gaming/) — if you're coming for the gaming side
 - [Linux Mint Forums](https://forums.linuxmint.com) — if you chose Mint
