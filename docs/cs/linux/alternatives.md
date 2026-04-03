@@ -52,7 +52,6 @@ Pokud hodně využíváš Word, Excel nebo PowerPoint, můžeš použít **Micro
 | Tidal | [Tidal-Hifi](https://github.com/Mastermindzh/tidal-hifi/releases/tag/6.3.1-Mavy) | Nativní komunitní linuxová aplikace |
 | Spotify | [Spotify](https://www.spotify.com) | Nativní linuxová aplikace |
 | iTunes | [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox) / [Clementine](https://www.clementine-player.org) | Přehrávače lokální hudby |
-| Windows Photos | [gThumb](https://wiki.gnome.org/Apps/Gthumb) / [Shotwell](https://wiki.gnome.org/Apps/Shotwell) | Prohlížeče a správci fotek |
 
 ## Grafika a design
 
