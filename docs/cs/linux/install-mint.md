@@ -7,8 +7,6 @@ description: Podrobný průvodce instalací Linux Mint — nejpřívětivější
 
 Linux Mint je nejdoporučovanější distribuce pro uživatele přecházející z Windows. Má známý hlavní panel, nabídku Start a správce souborů, a funguje hned po instalaci bez složitého nastavování.
 
-[[toc]]
-
 ## Než začneš
 
 Připrav si:
