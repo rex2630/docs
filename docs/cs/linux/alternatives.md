@@ -23,9 +23,9 @@ Tady nemusíš nic měnit — všechny hlavní prohlížeče jsou na Linuxu dost
 
 | Windows | Alternativa pro Linux | Ve storu | Poznámka |
 |---|---|:---:|---|
-| Chrome | [Chrome](https://www.google.com/chrome/) | ❌ | Stáhnout z webu jako .deb/.rpm |
+| Chrome | [Chrome](https://www.google.com/chrome/) | ✅ | Dostupný přes Flatpak |
 | Firefox | [Firefox](https://www.mozilla.org/firefox/) | ✅ | Předinstalovaný na většině distribucí |
-| Edge | [Edge](https://www.microsoft.com/edge) | ❌ | Stáhnout z webu jako .deb/.rpm |
+| Edge | [Edge](https://www.microsoft.com/edge) | ✅ | Dostupný přes Flatpak |
 | Brave | [Brave](https://brave.com) | ✅ | Dostupný přes Flatpak |
 
 ## Kancelář a produktivita
