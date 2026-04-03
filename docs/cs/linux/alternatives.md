@@ -37,10 +37,10 @@ Pokud hodně využíváš Word, Excel nebo PowerPoint, můžeš použít **Micro
 
 | Windows | Alternativa pro Linux | Poznámka |
 |---|---|---|
-| Discord | [Discord](https://discord.com) | Nativní linuxová aplikace |
-| Slack | [Slack](https://slack.com) | Nativní linuxová aplikace |
-| Teams | [Teams](https://www.microsoft.com/teams) | Nativní linuxová aplikace |
-| Skype | [Skype](https://www.skype.com) | Nativní linuxová aplikace |
+| Discord | [Discord](https://discord.com/download) | Nativní linuxová aplikace |
+| Teamspeak | [Teamspeak](https://teamspeak.com/en/downloads/) | Nativní linuxová aplikace |
+| Slack | [Slack](https://slack.com/downloads/linux) | Nativní linuxová aplikace |
+| Teams | [Teams](https://github.com/IsmaelMartinez/teams-for-linux/releases/) | Nativní komunitní linuxová aplikace |
 | WhatsApp | [WhatsApp](https://web.whatsapp.com) | Webová verze funguje skvěle |
 
 ## Média a zábava
