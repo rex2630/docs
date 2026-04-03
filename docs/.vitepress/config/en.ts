@@ -24,7 +24,6 @@ export const en = {
           text: "Linux",
           items: [
             { text: "Quick Start", link: "/linux/" },
-            { text: "Windows App Alternatives", link: "/linux/alternatives" },
           ],
         },
         {
@@ -33,6 +32,12 @@ export const en = {
             { text: "Linux Mint", link: "/linux/install-mint" },
             { text: "Ubuntu", link: "/linux/install-ubuntu" },
             { text: "Fedora", link: "/linux/install-fedora" },
+          ],
+        },
+        {
+          text: "Software",
+          items: [
+            { text: "Windows App Alternatives", link: "/linux/alternatives" },
           ],
         },
       ],
