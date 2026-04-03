@@ -27,7 +27,7 @@ Tady nemusíš nic měnit — všechny hlavní prohlížeče jsou na Linuxu dost
 | Firefox | [Firefox](https://www.mozilla.org/firefox/) | ✅ | Předinstalovaný na většině distribucí |
 | Edge | [Edge](https://www.microsoft.com/edge) | ✅ | Dostupný přes Flatpak |
 | Brave | [Brave](https://brave.com) | ✅ | Dostupný přes Flatpak |
-| Opera | [Brave](https://www.opera.com/download) | ✅ | Dostupný přes Flatpak |
+| Opera | [Opera](https://www.opera.com/download) | ✅ | Dostupný přes Flatpak |
 
 ## Kancelář a produktivita
 
