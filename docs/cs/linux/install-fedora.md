@@ -7,8 +7,6 @@ description: Podrobný průvodce instalací Fedory — moderní distribuce pro h
 
 Fedora je moderní, rychle se vyvíjející distribuce sponzorovaná Red Hat. Přináší nejnovější software — nejnovější ovladače GPU, aktualizace Protonu a vylepšení jádra se tu objevují jako první. To z ní dělá oblíbenou volbu hráčů a vývojářů.
 
-[[toc]]
-
 ## Než začneš
 
 Připrav si:
