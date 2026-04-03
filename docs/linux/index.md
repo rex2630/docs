@@ -13,12 +13,11 @@ You've probably landed on this page because you're thinking about switching from
 
 Think of a Linux distribution like a Windows edition — same core, different experience. Here's what we recommend for Windows switchers:
 
-| Distribution | Stability | Software freshness | Best for |
-|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Moderate | General beginners |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Moderate | Windows switchers |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very recent | Gamers & developers |
-| [Arch Linux](https://archlinux.org) | ⭐⭐ | Bleeding edge | Advanced users |
+| Distribution | Stability | Software freshness | Best for | |
+|---|---|---|---|---|
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Moderate | General beginners | [Install guide →](/linux/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Moderate | Windows switchers | [Install guide →](/linux/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very recent | Gamers & developers | [Install guide →](/linux/install-fedora) |
 
 ::: tip Not sure which to pick?
 If you just want something that "works" out of the box and feels familiar, go with **Linux Mint**. It has a taskbar, start menu, and file manager that will feel right at home coming from Windows.
