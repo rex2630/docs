@@ -23,9 +23,9 @@ No changes needed here — all major browsers are available on Linux.
 
 | Windows | Linux Alternative | In store | Notes |
 |---|---|:---:|---|
-| Chrome | [Chrome](https://www.google.com/chrome/) | ❌ | Download from website as .deb/.rpm |
+| Chrome | [Chrome](https://www.google.com/chrome/) | ✅ | Available via Flatpak |
 | Firefox | [Firefox](https://www.mozilla.org/firefox/) | ✅ | Pre-installed on most distros |
-| Edge | [Edge](https://www.microsoft.com/edge) | ❌ | Download from website as .deb/.rpm |
+| Edge | [Edge](https://www.microsoft.com/edge) | ✅ | Available via Flatpak |
 | Brave | [Brave](https://brave.com) | ✅ | Available via Flatpak |
 
 ## Office & Productivity
