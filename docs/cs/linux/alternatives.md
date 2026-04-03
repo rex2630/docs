@@ -47,7 +47,9 @@ Pokud hodně využíváš Word, Excel nebo PowerPoint, můžeš použít **Micro
 
 | Windows | Alternativa pro Linux | Poznámka |
 |---|---|---|
-| Windows Media Player | [VLC](https://www.videolan.org) | Přehraje prakticky jakýkoliv formát |
+| VLC | [VLC](https://www.videolan.org) | Přehraje prakticky jakýkoliv formát |
+| MPC | [SMPlayer](https://www.smplayer.info/) | Přehraje prakticky jakýkoliv formát |
+| Tidal | [Tidal-Hifi](https://github.com/Mastermindzh/tidal-hifi/releases/tag/6.3.1-Mavy) | Nativní komunitní linuxová aplikace |
 | Spotify | [Spotify](https://www.spotify.com) | Nativní linuxová aplikace |
 | iTunes | [Rhythmbox](https://wiki.gnome.org/Apps/Rhythmbox) / [Clementine](https://www.clementine-player.org) | Přehrávače lokální hudby |
 | Windows Photos | [gThumb](https://wiki.gnome.org/Apps/Gthumb) / [Shotwell](https://wiki.gnome.org/Apps/Shotwell) | Prohlížeče a správci fotek |
