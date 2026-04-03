@@ -15,9 +15,9 @@ Pomyśl o dystrybucji Linuxa jak o edycji Windows — ten sam rdzeń, inne dośw
 
 | Dystrybucja | Stabilność | Aktualność oprogramowania | Najlepsza dla | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Ogólnych początkujących | [Przewodnik instalacji →](/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Przechodzących z Windows | [Przewodnik instalacji →](/linux/install-mint) |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Bardzo aktualna | Graczy i deweloperów | [Przewodnik instalacji →](/linux/install-fedora) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Ogólnych początkujących | [Przewodnik instalacji →](/pl/linux/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Przechodzących z Windows | [Przewodnik instalacji →](/pl/linux/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Bardzo aktualna | Graczy i deweloperów | [Przewodnik instalacji →](/pl/linux/install-fedora) |
 
 ::: tip Nie wiesz którą wybrać?
 Jeśli chcesz po prostu coś, co działa od razu i wygląda znajomo, wybierz **Linux Mint**. Ma pasek zadań, menu Start i menedżer plików, które będą wyglądać jak w domu po przyjściu z Windows.
