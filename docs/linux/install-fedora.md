@@ -7,8 +7,6 @@ description: Step-by-step guide to installing Fedora — a cutting-edge Linux di
 
 Fedora is a modern, fast-moving distribution sponsored by Red Hat. It ships the very latest software — newest GPU drivers, Proton updates, and kernel improvements land here first. This makes it a favourite among gamers and developers who want the latest without sacrificing stability.
 
-[[toc]]
-
 ## Before You Start
 
 Make sure you have:
