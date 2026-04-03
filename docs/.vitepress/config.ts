@@ -5,7 +5,11 @@ export default {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Linux", link: "/linux" },
+      {
+        text: "Linux",
+        items: [
+          { text: 'Quick Start', link: '/linux' },
+        ]
     ],
   },
   base: "/docs/",
