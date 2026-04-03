@@ -74,5 +74,5 @@ Vrstva kompatibility **Proton** od Steamu ti umožní hrát obrovskou knihovnu h
 Linuxová komunita je k nováčkům velmi přívětivá. Tady jsou nejlepší místa pro kladení otázek:
 
 - [r/linux4noobs](https://reddit.com/r/linux4noobs) — začátečníkům přívětivá komunita na Redditu
-- [r/linuxgaming](https://reddit.com/r/linuxgaming) — pokud přicházíš kvůli hraní
+- [r/linux_gaming](https://www.reddit.com/r/linux_gaming/) — pokud přicházíš kvůli hraní
 - [Linux Mint Forums](https://forums.linuxmint.com) — pokud sis vybral Mint
