@@ -1,11 +1,11 @@
 ---
-title: Installing Fedora
-description: Step-by-step guide to installing Fedora — a cutting-edge Linux distribution perfect for gamers and developers.
+title: Installing Fedora KDE
+description: Step-by-step guide to installing Fedora KDE Plasma — a cutting-edge Linux distribution perfect for gamers and developers.
 ---
 
-# Installing Fedora
+# Installing Fedora KDE
 
-Fedora is a modern, fast-moving distribution sponsored by Red Hat. It ships the very latest software — newest GPU drivers, Proton updates, and kernel improvements land here first. This makes it a favourite among gamers and developers who want the latest without sacrificing stability.
+Fedora is a modern, fast-moving distribution sponsored by Red Hat. It ships the very latest software — newest GPU drivers, Proton updates, and kernel improvements land here first. The KDE Plasma edition offers a familiar, Windows-like desktop that's highly customizable and uses roughly 20–30 % less RAM than the GNOME Workstation edition. This makes it a favourite among gamers and developers who want the latest without sacrificing stability.
 
 ## Before You Start
 
@@ -23,12 +23,12 @@ If you're installing on a real machine, back up any important files to an extern
 Fedora has its own flashing tool called **Fedora Media Writer** — the easiest approach for Windows users.
 
 **Option A — Fedora Media Writer (recommended):**
-1. Go to [fedoraproject.org/workstation](https://fedoraproject.org/workstation/)
+1. Go to [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/)
 2. Click **Download Fedora Media Writer** and install it
-3. Open it, select **Fedora Workstation**, click **Download & Write** — it downloads the ISO and flashes your USB automatically
+3. Open it, select **Fedora KDE Plasma Desktop**, click **Download & Write** — it downloads the ISO and flashes your USB automatically
 
 **Option B — Manual ISO + Rufus:**
-1. Download the ISO from [fedoraproject.org/workstation](https://fedoraproject.org/workstation/) → click **For x86_64**
+1. Download the ISO from [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/) → click **For x86_64**
 2. Open [Rufus](https://rufus.ie), select your USB and the ISO, click **START**
 
 ::: tip Fedora Media Writer saves a step
@@ -49,7 +49,7 @@ It downloads the latest ISO and writes it to USB in one go — no need to manage
 | Acer | F12 |
 | MSI | F11 |
 
-3. Select your USB drive and choose **Start Fedora Workstation Live**
+3. Select your USB drive and choose **Start Fedora KDE Plasma Desktop Live**
 
 ::: info Secure Boot on Fedora
 Unlike other distros, **Fedora fully supports Secure Boot** — you should not need to disable it. If you do have boot issues, verify your USB was written correctly first.
@@ -57,7 +57,7 @@ Unlike other distros, **Fedora fully supports Secure Boot** — you should not n
 
 ## Step 3 — Try Fedora Live
 
-Fedora will boot into a live GNOME desktop. Test your hardware — Wi-Fi, sound, display — before installing. When ready, click **Install to Hard Drive** from the **Activities** overview or the welcome dialog.
+Fedora will boot into a live KDE Plasma desktop. Test your hardware — Wi-Fi, sound, display — before installing. When ready, double-click **Install to Hard Drive** on the desktop, or find it in the application launcher.
 
 ::: warning NVIDIA GPU in Live session
 Fedora ships with the open-source Nouveau driver by default, which has limited NVIDIA support. The screen may be stuck at low resolution or have poor performance. This is expected — proper NVIDIA drivers will be installed after the system is up.
@@ -90,7 +90,7 @@ On the manual partitioning screen:
 4. Click **Done** → **Accept Changes**
 
 - ✅ Both systems available at startup via GRUB
-- ⚠️ Requires at least **40 GB** of free unallocated space (Fedora benefits from more space than Mint/Ubuntu due to larger package sizes)
+- ⚠️ Requires at least **40 GB** of free unallocated space
 
 ::: details Not enough free space for dual boot?
 Shrink your Windows partition first:
@@ -102,7 +102,7 @@ Shrink your Windows partition first:
 :::
 
 ::: tip Accessing Windows files from Fedora
-Your Windows partition will appear in Fedora's file manager (Nautilus). You can mount and browse it freely. Note that if Windows was not shut down cleanly (e.g. fast startup enabled), the partition may be mounted read-only as a safety measure.
+Your Windows partition will appear in **Dolphin** (KDE's file manager). You can mount and browse it freely. Note that if Windows was not shut down cleanly (e.g. fast startup enabled), the partition may be mounted read-only as a safety measure.
 
 To disable Windows Fast Startup (recommended for dual boot):
 **Control Panel → Power Options → Choose what the power buttons do → Turn on fast startup → uncheck it**
@@ -118,13 +118,13 @@ To disable Windows Fast Startup (recommended for dual boot):
 
 ## Step 6 — First Boot & Setup Wizard
 
-After reboot, Fedora runs a **Setup Wizard (GNOME Initial Setup)**:
+After reboot, Fedora KDE runs a brief **Setup Wizard**:
 
 1. Connect to Wi-Fi
 2. Set privacy preferences
 3. Create your user account and password
 
-After logging in, open the **Terminal** and run a full system update immediately:
+After logging in, open **Konsole** (KDE's terminal) and run a full system update immediately:
 
 ```bash
 sudo dnf upgrade --refresh -y
@@ -156,7 +156,7 @@ The `akmod-nvidia` package builds the driver module for your specific kernel. Th
 
 ### Gaming Setup
 
-1. Install **Steam** from the Software store or terminal:
+1. Install **Steam** from **Discover** (KDE's software store) or terminal:
 ```bash
 sudo dnf install steam
 ```
@@ -190,7 +190,7 @@ sudo dnf install iwlwifi-dkms    # some Intel cards
 At the GRUB menu, press **E**, find the `linux` line, add `nomodeset` before `rhgb quiet`. Press **F10** to boot. Then enable RPM Fusion and install `akmod-nvidia` as described above.
 
 ### Wayland issues with NVIDIA (screen tearing, apps crashing)
-Older NVIDIA cards have limited Wayland support. Switch to Xorg at the login screen by clicking the gear icon ⚙️ and selecting **GNOME on Xorg**.
+Unlike Fedora GNOME (which is now Wayland-only), **Fedora KDE still supports X11**. At the login screen, click the session selector in the bottom-left corner and choose **Plasma (X11)** instead of **Plasma (Wayland)**.
 
 ### SELinux blocking an application
 Fedora uses SELinux for security, which occasionally blocks apps. Check the SELinux alert in the notification area and follow the suggested fix, or temporarily set it to permissive mode:
@@ -221,5 +221,5 @@ This is caused by Windows Fast Startup. In Windows:
 **Control Panel → Power Options → Choose what the power buttons do → uncheck Turn on fast startup**
 
 ::: tip You're done! 🎉
-Fedora is installed and ready. Head over to the [App Alternatives](/linux/alternatives) page to find replacements for your favourite Windows apps.
+Fedora KDE is installed and ready. Head over to the [App Alternatives](/linux/alternatives) page to find replacements for your favourite Windows apps.
 :::
