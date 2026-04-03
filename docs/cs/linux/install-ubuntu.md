@@ -7,8 +7,6 @@ description: Podrobný průvodce instalací Ubuntu — stabilní distribuce pro 
 
 Ubuntu je jedna z nejpoužívanějších linuxových distribucí na světě. Je propracovaná, dobře zdokumentovaná a má obrovskou komunitu — díky tomu snadno najdeš pomoc téměř pro jakýkoliv problém.
 
-[[toc]]
-
 ## Než začneš
 
 Připrav si:
