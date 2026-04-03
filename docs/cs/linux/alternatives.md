@@ -1,9 +1,9 @@
 ---
-title: Alternativy aplikací pro Windows
+title: Alternativy k Windows aplikacím
 description: Hledáš své oblíbené aplikace z Windows na Linuxu? Tady je, čím je nahradit.
 ---
 
-# Alternativy aplikací pro Windows
+# Alternativy k Windows aplikacím
 
 Přechod na Linux neznamená vzdát se svých oblíbených aplikací. Většina toho, co denně používáš, má nativní linuxovou verzi nebo skvělou alternativu.
 
