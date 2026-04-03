@@ -13,12 +13,12 @@ Pravděpodobně jsi na této stránce, protože přemýšlíš o přechodu z Win
 
 Představ si linuxovou distribuci jako edici Windows — stejné jádro, jiný zážitek. Tady jsou naše doporučení pro přecházející z Windows:
 
-| Distribuce | Stabilita | Čerstvost softwaru | Nejlepší pro |
-|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Střední | Úplné začátečníky |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Střední | Přecházející z Windows |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Velmi aktuální | Hráče & vývojáře |
-| [Arch Linux](https://archlinux.org) | ⭐⭐ | Nejnovější verze | Pokročilé uživatele |
+| Distribuce | Stabilita | Čerstvost softwaru | Nejlepší pro | |
+|---|---|---|---|---|
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Střední | Úplné začátečníky | [Průvodce instalací →](/cs/linux/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Střední | Přecházející z Windows | [Průvodce instalací →](/cs/linux/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Velmi aktuální | Hráče & vývojáře | [Průvodce instalací →](/cs/linux/install-fedora) |
+| [Arch Linux](https://archlinux.org) | ⭐⭐ | Nejnovější verze | Pokročilé uživatele | — |
 
 ::: tip Nevíš, kterou si vybrat?
 Pokud chceš něco, co prostě „funguje" hned po instalaci a bude ti připadat povědomé, zvol **Linux Mint**. Má hlavní panel, nabídku Start a správce souborů, které ti budou připadat jako doma po přechodu z Windows.
