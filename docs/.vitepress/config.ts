@@ -9,7 +9,7 @@ export default {
         text: "Linux",
         items: [
           { text: 'Quick Start', link: '/linux' },
-        ]
+        ],
     ],
   },
   base: "/docs/",
