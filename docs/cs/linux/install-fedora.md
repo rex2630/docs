@@ -1,46 +1,46 @@
 ---
-title: Instalace Fedory
-description: Podrobný průvodce instalací Fedory — moderní distribuce pro hráče a vývojáře.
+title: Instalace Fedory KDE
+description: Průvodce instalací Fedory KDE Plasma — moderní linuxová distribuce ideální pro hráče a vývojáře.
 ---
 
-# Instalace Fedory
+# Instalace Fedory KDE
 
-Fedora je moderní, rychle se vyvíjející distribuce sponzorovaná Red Hat. Přináší nejnovější software — nejnovější ovladače GPU, aktualizace Protonu a vylepšení jádra se tu objevují jako první. To z ní dělá oblíbenou volbu hráčů a vývojářů.
+Fedora je moderní, rychle se vyvíjející distribuce sponzorovaná společností Red Hat. Přináší nejnovější software — aktuální ovladače GPU, aktualizace Protonu a vylepšení jádra dorazí sem jako první. Edice KDE Plasma nabízí přehledné, Windows-podobné prostředí s vysokou mírou přizpůsobení a zhruba o 20–30 % nižší spotřebou RAM oproti GNOME Workstation verzi. To z ní dělá oblíbenou volbu hráčů i vývojářů, kteří chtějí to nejnovější bez ztráty stability.
 
 ## Než začneš
 
 Připrav si:
-- USB disk s alespoň **8 GB** volného místa (vše na něm bude smazáno)
+- USB flash disk s alespoň **8 GB** volného místa (vše na něm bude smazáno)
 - Stabilní připojení k internetu
-- Přibližně **20–30 minut** času
+- Přibližně **20–30 minut** volného času
 
 ::: warning Nejdřív si zazálohuj data
-Pokud instaluješ na fyzický počítač, ulož si všechny důležité soubory na externí disk nebo do cloudu.
+Pokud instaluješ na fyzický počítač, přesuň všechny důležité soubory na externí disk nebo do cloudu ještě před zahájením instalace.
 :::
 
-## Krok 1 — Stáhni ISO
+## Krok 1 — Stažení ISO
 
-Fedora má vlastní nástroj pro zápis na USB — **Fedora Media Writer** — nejjednodušší varianta pro uživatele Windows.
+Fedora má vlastní nástroj pro vytvoření bootovacího USB — **Fedora Media Writer** — nejjednodušší možnost pro uživatele Windows.
 
 **Možnost A — Fedora Media Writer (doporučeno):**
-1. Jdi na [fedoraproject.org/workstation](https://fedoraproject.org/workstation/)
+1. Jdi na [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/)
 2. Klikni na **Stáhnout Fedora Media Writer** a nainstaluj ho
-3. Otevři ho, vyber **Fedora Workstation**, klikni na **Stáhnout a zapsat** — stáhne ISO a zapíše USB automaticky
+3. Otevři ho, vyber **Fedora KDE Plasma Desktop**, klikni na **Stáhnout a zapsat** — automaticky stáhne ISO a zapíše ho na USB
 
 **Možnost B — Ruční ISO + Rufus:**
-1. Stáhni ISO z [fedoraproject.org/workstation](https://fedoraproject.org/workstation/) → klikni na **Pro x86_64**
-2. Otevři [Rufus](https://rufus.ie), vyber USB a ISO, klikni na **START**
+1. Stáhni ISO z [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/) → klikni na **Pro x86_64**
+2. Otevři [Rufus](https://rufus.ie), vyber USB a ISO soubor, klikni na **START**
 
-::: tip Fedora Media Writer šetří krok
-Stáhne nejnovější ISO a zapíše ho na USB v jednom kroku — není potřeba spravovat ISO soubor ručně.
+::: tip Fedora Media Writer šetří čas
+Stáhne nejnovější ISO a rovnou ho zapíše na USB — není potřeba spravovat soubor ISO ručně.
 :::
 
-## Krok 2 — Spuštění z USB
+## Krok 2 — Bootování z USB
 
-1. Zapoj USB a restartuj PC
-2. Při startu opakovaně mačkej klávesu pro spouštěcí nabídku
+1. Zapoj USB a restartuj počítač
+2. Při startu stiskni klávesu pro výběr bootovacího zařízení
 
-| Výrobce | Klávesa |
+| Výrobce | Klávesa boot menu |
 |---|---|
 | Lenovo | F12 |
 | HP | F9 |
@@ -49,87 +49,88 @@ Stáhne nejnovější ISO a zapíše ho na USB v jednom kroku — není potřeba
 | Acer | F12 |
 | MSI | F11 |
 
-3. Vyber USB disk a zvol **Start Fedora Workstation Live**
+3. Vyber své USB a zvolte **Start Fedora KDE Plasma Desktop Live**
 
 ::: info Secure Boot na Fedoře
-Na rozdíl od jiných distribucí **Fedora plně podporuje Secure Boot** — neměl by být potřeba ho vypínat. Pokud máš problémy se spuštěním, ověř, že bylo USB správně zapsáno.
+Na rozdíl od jiných distribucí **Fedora plně podporuje Secure Boot** — neměl by být potřeba ho vypínat. Pokud narazíš na problémy s bootováním, nejdřív ověř, že bylo USB správně zapsáno.
 :::
 
-## Krok 3 — Vyzkoušej Fedoru Live
+## Krok 3 — Vyzkoušení live prostředí
 
-Fedora se spustí do live GNOME plochy. Otestuj hardware — Wi-Fi, zvuk, displej — před instalací. Když jsi připraven, klikni na **Nainstalovat na pevný disk** z přehledu **Aktivity** nebo uvítacího dialogu.
+Fedora nabootuje do živého desktopového prostředí KDE Plasma. Otestuj hardware — Wi-Fi, zvuk, displej — ještě před instalací. Až budeš připraven, dvakrát klikni na ikonu **Instalovat na disk** na ploše nebo ji najdi ve spouštěči aplikací.
 
-::: warning NVIDIA GPU v Live session
-Fedora ve výchozím stavu používá open-source ovladač Nouveau, který má omezenou podporu NVIDIA. Obrazovka může být zaseknutá na nízkém rozlišení nebo mít špatný výkon. To je normální — správné ovladače NVIDIA se nainstalují po zprovoznění systému.
+::: warning NVIDIA GPU v live session
+Fedora standardně obsahuje open-source ovladač Nouveau s omezenou podporou NVIDIA. Obrazovka může být zaseknutá na nízkém rozlišení nebo mít slabý výkon. To je normální — správné ovladače NVIDIA nainstaluješ po dokončení instalace.
 :::
 
 ## Krok 4 — Typ instalace (instalátor Anaconda)
 
-Fedora používá instalátor **Anaconda**. Hlavní obrazovka zobrazuje všechny možnosti najednou — položky s ikonou varování ⚠️ musíš dokončit před pokračováním.
+Fedora používá instalátor **Anaconda**. Hlavní obrazovka zobrazuje všechny možnosti najednou — položky s ikonou upozornění ⚠️ musí být vyplněny před pokračováním.
 
-### Možnost A: Nahradit vše (úplný přechod)
+### Možnost A: Nahradit vše (čistá instalace)
 
-Klikni na **Cíl instalace**, vyber disk, zvol **Automatické** rozdělení a klikni na **Hotovo**.
+Klikni na **Cíl instalace**, vyber disk, zvol **Automatické** dělení, klikni na **Hotovo**.
 
-- ✅ Nejjednodušší varianta, doporučeno pro většinu uživatelů
+- ✅ Nejjednodušší varianta, doporučena pro většinu uživatelů
 - ✅ Celý disk dostupný pro Fedoru
-- ❌ Všechna existující data budou smazána
+- ❌ Všechna stávající data budou smazána
 
 ::: danger Ujisti se, že máš zálohována data z Windows
-Výběr Automatické na jediném disku smaže vše na něm. Zkontroluj, který disk je vybrán.
+Výběr automatického dělení na jediném disku smaže vše, co na něm je. Dvakrát zkontroluj, který disk je vybraný.
 :::
 
 ### Možnost B: Ponechat Windows (dual boot)
 
-Klikni na **Cíl instalace**, vyber disk, zvol **Vlastní** rozdělení a klikni na **Hotovo**.
+Klikni na **Cíl instalace**, vyber disk, pak zvol **Vlastní** dělení a klikni na **Hotovo**.
 
-Na obrazovce ručního rozdělení:
-1. Klikni na **Klikni zde pro jejich automatické vytvoření** jako výchozí bod
-2. Ověř, že tvůj Windows oddíl (obvykle `ntfs`) je v seznamu a **není** označen k formátování
+Na obrazovce ručního dělení:
+1. Klikni na **Klikněte sem pro automatické vytvoření** jako výchozí bod
+2. Ověř, že oddíl Windows (obvykle `ntfs`) je v seznamu a **není** označen k formátování
 3. Uprav velikost kořenového oddílu Fedory (`/`) — doporučeno **40 GB nebo více**
 4. Klikni na **Hotovo** → **Přijmout změny**
 
 - ✅ Oba systémy dostupné při startu přes GRUB
-- ⚠️ Vyžaduje alespoň **40 GB** volného nepřiděleného místa (Fedora potřebuje více místa než Mint/Ubuntu kvůli větším balíčkům)
+- ⚠️ Vyžaduje alespoň **40 GB** volného nealokovaného místa
 
-::: details Nemáš dostatek místa pro dual boot?
+::: details Nemáš dost volného místa pro dual boot?
+Nejdřív zmenš oddíl Windows:
 1. Ve Windows stiskni **Win + X** → **Správa disků**
-2. Klikni pravým tlačítkem na disk C: → **Zmenšit svazek**
+2. Pravé tlačítko na disk C: → **Zmenšit svazek**
 3. Zadej množství v MB (např. `51200` pro 50 GB)
 4. Klikni na **Zmenšit** — uvolněné místo se zobrazí jako „Nepřiděleno"
-5. V Anacondě bude toto místo dostupné pro Fedoru
+5. V Anacondě bude toto místo k dispozici pro Fedoru
 :::
 
 ::: tip Přístup k souborům Windows z Fedory
-Windows oddíl se zobrazí v správci souborů Fedory (Nautilus). Pokud Windows nebyl řádně vypnut (např. kvůli rychlému spuštění), oddíl může být připojen pouze pro čtení z bezpečnostních důvodů.
+Oddíl Windows se zobrazí ve správci souborů **Dolphin**. Lze ho připojit a procházet volně. Pozor — pokud Windows nebyl čistě vypnut (např. zapnutý rychlý start), oddíl může být připojen jen pro čtení jako bezpečnostní opatření.
 
-Chceš-li vypnout Rychlé spuštění Windows (doporučeno pro dual boot):
+Jak vypnout rychlý start Windows (doporučeno pro dual boot):
 **Ovládací panely → Možnosti napájení → Nastavení tlačítek napájení → Zapnout rychlé spuštění → odškrtni**
 :::
 
 ## Krok 5 — Dokončení instalátoru
 
 1. **Klávesnice** — klikni a nastav rozložení
-2. **Čas a datum** — vyber časové pásmo, zapni přepínač **Čas ze sítě**
-3. **Účet root** — nechej zakázaný (Fedora používá místo toho `sudo`)
-4. **Vytvoření uživatele** — provede se po prvním spuštění v Průvodci nastavením
-5. Klikni na **Zahájit instalaci** → počkej **10–15 minut**
+2. **Čas a datum** — vyber časové pásmo, zapni přepínač **Síťový čas**
+3. **Účet root** — nech vypnutý (Fedora místo toho používá `sudo`)
+4. **Vytvoření uživatele** — provede se po prvním spuštění v průvodci nastavením
+5. Klikni na **Zahájit instalaci** → čekej **10–15 minut**
 
-## Krok 6 — První spuštění a Průvodce nastavením
+## Krok 6 — První spuštění a průvodce nastavením
 
-Po restartu Fedora spustí **Průvodce nastavením (GNOME Initial Setup)**:
+Po restartu Fedora KDE spustí stručného **průvodce nastavením**:
 
 1. Připoj se k Wi-Fi
-2. Nastav předvolby ochrany soukromí
+2. Nastav předvolby soukromí
 3. Vytvoř uživatelský účet a heslo
 
-Po přihlášení okamžitě spusť úplnou aktualizaci systému v **Terminálu**:
+Po přihlášení otevři **Konsole** (terminál KDE) a ihned spusť kompletní aktualizaci systému:
 
 ```bash
 sudo dnf upgrade --refresh -y
 ```
 
-### Nainstaluj RPM Fusion (nezbytné pro hraní a multimédia)
+### Instalace RPM Fusion (nezbytné pro gaming a multimédia)
 
 Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, multimediální kodeky, Steam a další:
 
@@ -139,7 +140,7 @@ sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-### Nainstaluj ovladače NVIDIA (pokud je máš)
+### Instalace ovladačů NVIDIA (pokud je potřeba)
 
 Po aktivaci RPM Fusion:
 
@@ -147,75 +148,78 @@ Po aktivaci RPM Fusion:
 sudo dnf install akmod-nvidia
 ```
 
-Po dokončení restartuj. Proces sestavení trvá několik minut — **nerestartouj okamžitě**, počkej, až se terminál plně vrátí na příkazový řádek.
+Po dokončení restartuj. Sestavení modulu trvá několik minut — **nerestaruj ihned**, počkej než se terminál plně vrátí k promptu.
 
-::: warning NVIDIA na Fedoře — trpělivost nutná
-Balíček `akmod-nvidia` sestavuje modul ovladače pro tvoje konkrétní jádro. Trvá to **2–5 minut** po instalaci. Pokud restartuješ příliš brzy, spustíš se bez ovladače a dostaneš černou obrazovku. Počkej, až se terminál plně vrátí na příkazový řádek.
+::: warning NVIDIA na Fedoře — trpělivost
+Balíček `akmod-nvidia` sestaví modul ovladače pro tvoje konkrétní jádro. To trvá **2–5 minut** po instalaci. Pokud restartuješ příliš brzy, nabootuješ bez ovladače a dostaneš černou obrazovku. Počkej, dokud se terminál plně nevrátí k promptu.
 :::
 
-### Nastavení pro hraní
+### Herní nastavení
 
-1. Nainstaluj **Steam** z obchodu se softwarem nebo terminálem:
+1. Nainstaluj **Steam** z **Discoveru** (obchod se softwarem KDE) nebo přes terminál:
 ```bash
 sudo dnf install steam
 ```
 2. Otevři Steam → **Nastavení → Kompatibilita**
 3. Zapni **Povolit Steam Play pro všechny tituly**
-4. Vyber nejnovější verzi **Proton**
+4. Vyber nejnovější verzi **Protonu**
 
-::: tip Nejdřív ověř kompatibilitu her
-Před přechodem zkontroluj na [ProtonDB](https://www.protondb.com), jak dobře tvé hry běží na Linuxu. Většina populárních titulů funguje skvěle na Fedoře díky nejnovějšímu jádru a ovladačům.
+::: tip Nejdřív zkontroluj své hry
+Před přechodem se podívej na [ProtonDB](https://www.protondb.com), jak dobře tvoje hry fungují. Většina AAA titulů a populárních her na Fedoře funguje skvěle — zejména s nejnovějším jádrem a ovladači Mesa/NVIDIA.
 :::
 
-## Časté problémy a jejich řešení
+## Časté problémy a řešení
 
-### Po dual boot instalaci se GRUB nezobrazí
-1. Ve Windows otevři **CMD jako správce**
+### Po dual boot instalaci se nezobrazí GRUB
+Pokud PC bootuje přímo do Windows:
+1. Otevři **CMD jako správce** ve Windows
 2. Spusť: `bcdedit /set {bootmgr} path \EFI\fedora\grubx64.efi`
-3. Restartuj — GRUB by se měl zobrazit
+3. Restartuj — GRUB by se měl nyní zobrazit
+
+Nebo vstup do BIOSu a nastav **Fedoru** jako první možnost bootování.
 
 ### Wi-Fi nefunguje po instalaci
-Nejčastější u Broadcom nebo některých Intel karet. Připoj se přes ethernet a spusť:
+Nejčastěji u karet Broadcom nebo některých Intel. Připoj se přes ethernet a spusť:
 ```bash
 sudo dnf install akmod-wl        # Broadcom
 # nebo
 sudo dnf install iwlwifi-dkms    # některé Intel karty
 ```
 
-### Černá obrazovka po instalaci (NVIDIA, bez RPM Fusion)
-V GRUB menu stiskni **E**, na řádku `linux` přidej `nomodeset` před `rhgb quiet`. Stiskni **F10**. Poté aktivuj RPM Fusion a nainstaluj `akmod-nvidia` jak je popsáno výše.
+### Černá obrazovka po instalaci (NVIDIA, RPM Fusion ještě není)
+V GRUB menu stiskni **E**, najdi řádek `linux`, přidej `nomodeset` před `rhgb quiet`. Stiskni **F10** pro bootování. Pak aktivuj RPM Fusion a nainstaluj `akmod-nvidia` podle výše uvedeného postupu.
 
-### Problémy s Wayland na NVIDIA (trhání obrazu, padání aplikací)
-Starší NVIDIA karty mají omezenou podporu Wayland. Na přihlašovací obrazovce klikni na ikonu ⚙️ a zvol **GNOME na Xorg**.
+### Problémy s Waylandem a NVIDIA (tearing obrazovky, pády aplikací)
+Na rozdíl od Fedory GNOME (která je nyní čistě Wayland), **Fedora KDE stále podporuje X11**. Na přihlašovací obrazovce klikni na výběr session v levém dolním rohu a zvolte **Plasma (X11)** místo **Plasma (Wayland)**.
 
 ### SELinux blokuje aplikaci
-Fedora používá SELinux pro zabezpečení, který příležitostně blokuje aplikace. Zkontroluj upozornění SELinux v oznamovací oblasti a postupuj podle navrhovaného řešení, nebo dočasně přepni do permisivního režimu:
+Fedora používá SELinux pro bezpečnost, který občas blokuje aplikace. Zkontroluj upozornění SELinux v oznamovací oblasti a postupuj dle navrhovaného řešení, nebo ho dočasně přepni do permissive režimu:
 ```bash
 sudo setenforce 0
 ```
 ::: warning
-Nastavení SELinux do permisivního režimu snižuje zabezpečení systému. Dělej to pouze pro ladění — po vyřešení ho znovu zapni:
+Přepnutí SELinux do permissive snižuje zabezpečení systému. Používej to pouze pro ladění — po dokončení ho znovu zapni:
 ```bash
 sudo setenforce 1
 ```
 :::
 
-### dnf je při aktualizacích pomalý
-Přidej do `/etc/dnf/dnf.conf`:
+### dnf je pomalý při aktualizacích
+Správce balíčků `dnf` kontroluje metadata při každém spuštění. Zrychli ho přidáním do `/etc/dnf/dnf.conf`:
 ```ini
 max_parallel_downloads=10
 fastestmirror=True
 ```
 
-### Hodiny ukazují špatný čas (dual boot)
+### Hodiny ukazují špatný čas při přepínání mezi Windows a Linuxem (dual boot)
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
-### Windows oddíl připojen pouze pro čtení
-Způsobeno Rychlým spuštěním Windows. Ve Windows:
+### Oddíl Windows připojen jen pro čtení
+Způsobeno rychlým startem Windows. Ve Windows:
 **Ovládací panely → Možnosti napájení → Nastavení tlačítek napájení → odškrtni Zapnout rychlé spuštění**
 
 ::: tip Hotovo! 🎉
-Fedora je nainstalována a připravena. Přejdi na stránku [Alternativy aplikací](/cs/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
+Fedora KDE je nainstalována a připravena k použití. Přejdi na stránku [Alternativy aplikací](/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
 :::
