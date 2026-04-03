@@ -17,7 +17,7 @@ export default {
           {
             text: "Linux",
             items: [
-              { text: "Quick Start", link: "/linux/" },
+              { text: "Quick Start Guide", link: "/linux/" },
               { text: "Test Category 2", link: "/linux/test" },
             ],
           },
