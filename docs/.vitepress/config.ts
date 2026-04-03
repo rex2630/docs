@@ -1,11 +1,11 @@
 export default {
-  title: "Portal4Gamers Docs",
-  description: "Documentation for Portal4Gamers",
+  title: "P4G Docs",
+  description: "Documentation for P4G",
 
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Docs", link: "/intro" },
+      { text: "Linux", link: "/linux" },
     ],
   },
   base: "/docs/",
