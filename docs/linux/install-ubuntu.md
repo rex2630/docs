@@ -7,8 +7,6 @@ description: Step-by-step guide to installing Ubuntu — a solid, beginner-frien
 
 Ubuntu is one of the most widely used Linux distributions in the world. It's polished, well-documented, and has a massive community — making it easy to find help for almost any issue.
 
-[[toc]]
-
 ## Before You Start
 
 Make sure you have:
