@@ -1,5 +1,3 @@
-Tady je kompletní překlad do češtiny:
-
 text
 ---
 title: Průvodce rychlým startem
