@@ -14,7 +14,7 @@ export const cs = {
       {
         text: "Linux",
         items: [
-          { text: "Rychlý start", link: "/cs/linux/" },
+          { text: "Rychlý přechod", link: "/cs/linux/" },
           { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
         ],
       },
@@ -24,7 +24,7 @@ export const cs = {
         {
           text: "Linux",
           items: [
-            { text: "Rychlý start", link: "/cs/linux/" },
+            { text: "Rychlý přechod", link: "/cs/linux/" },
           ],
         },
         {
