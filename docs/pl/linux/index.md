@@ -73,5 +73,5 @@ Warstwa kompatybilności **Proton** Steama pozwala grać w ogromną bibliotekę 
 Społeczność Linuxa jest bardzo przyjazna dla nowych użytkowników. Oto najlepsze miejsca, gdzie możesz zadawać pytania:
 
 - [r/linux4noobs](https://reddit.com/r/linux4noobs) — przyjazna dla początkujących społeczność na Reddit
-- [r/linuxgaming](https://reddit.com/r/linuxgaming) — jeśli przechodzisz ze względu na gry
+- [r/linux_gaming](https://www.reddit.com/r/linux_gaming/) — jeśli przechodzisz ze względu na gry
 - [Linux Mint Forums](https://forums.linuxmint.com) — jeśli wybrałeś Mint
