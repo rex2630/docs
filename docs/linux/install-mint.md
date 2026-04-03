@@ -7,8 +7,6 @@ description: Step-by-step guide to installing Linux Mint — the most beginner-f
 
 Linux Mint is the most recommended distribution for users coming from Windows. It has a familiar taskbar, start menu, and file manager, and it works out of the box without much configuration.
 
-[[toc]]
-
 ## Before You Start
 
 Make sure you have:
