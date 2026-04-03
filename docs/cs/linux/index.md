@@ -1,4 +1,3 @@
-text
 ---
 title: Průvodce rychlým startem
 description: Přecházíš z Windows na Linux? Tady je vše, co potřebuješ vědět pro začátek.
