@@ -221,5 +221,5 @@ Způsobeno rychlým startem Windows. Ve Windows:
 **Ovládací panely → Možnosti napájení → Nastavení tlačítek napájení → odškrtni Zapnout rychlé spuštění**
 
 ::: tip Hotovo! 🎉
-Fedora KDE je nainstalována a připravena k použití. Přejdi na stránku [Alternativy aplikací](/pl/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
+Fedora KDE je nainstalována a připravena k použití. Přejdi na stránku [Alternativy aplikací](/cs/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
 :::
