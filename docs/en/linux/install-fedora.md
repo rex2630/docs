@@ -221,5 +221,5 @@ This is caused by Windows Fast Startup. In Windows:
 **Control Panel → Power Options → Choose what the power buttons do → uncheck Turn on fast startup**
 
 ::: tip You're done! 🎉
-Fedora KDE is installed and ready. Head over to the [App Alternatives](/linux/alternatives) page to find replacements for your favourite Windows apps.
+Fedora KDE is installed and ready. Head over to the [App Alternatives](/en/linux/alternatives) page to find replacements for your favourite Windows apps.
 :::
