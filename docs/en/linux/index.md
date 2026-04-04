@@ -15,9 +15,9 @@ Think of a Linux distribution like a Windows edition — same core, different ex
 
 | Distribution | Stability | Software freshness | Best for | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Moderate | General beginners | [Install guide →](/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Moderate | Windows switchers | [Install guide →](/linux/install-mint) |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very recent | Gamers & developers | [Install guide →](/linux/install-fedora) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Moderate | General beginners | [Install guide →](/en/linux/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Moderate | Windows switchers | [Install guide →](/en/linux/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very recent | Gamers & developers | [Install guide →](/en/linux/install-fedora) |
 
 ::: tip Not sure which to pick?
 If you just want something that "works" out of the box and feels familiar, go with **Linux Mint**. It has a taskbar, start menu, and file manager that will feel right at home coming from Windows.
