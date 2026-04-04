@@ -87,3 +87,10 @@ Photoshop nemá nativní linuxovou verzi. GIMP pokryje většinu případů pou�
 ::: tip Nejdřív ověř kompatibilitu
 Před přechodem zkontroluj na [ProtonDB](https://www.protondb.com), jak dobře tvé hry na Linuxu běží. Většina populárních titulů funguje skvěle, zejména na Fedoře s aktuálními ovladači.
 :::
+
+## Nástroje
+
+| Windows | Alternativa pro Linux | Ve storu | Poznámka |
+|---|---|:---:|---|
+| Logitech G Hub | [Oversteer](https://github.com/berarma/oversteer) | ✅ | Nastavení volantů, dostupný přes Flatpak |
+| Logitech G Hub | [Piper](https://github.com/libratbag/piper) | ✅ | Nastavení myší, dostupný přes Flatpak |
