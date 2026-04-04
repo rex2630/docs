@@ -6,7 +6,7 @@ import { pl } from "./pl";
 export default defineConfig({
   base: "/docs/",
   locales: {
-    root: en,
+    en: en,
     cs: cs,
     pl: pl,
   },
