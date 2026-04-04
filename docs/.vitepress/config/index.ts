@@ -5,6 +5,9 @@ import { pl } from "./pl";
 
 export default defineConfig({
   base: "/docs/",
+
+  lastUpdated: true,
+
   locales: {
     en: en,
     cs: cs,
