@@ -204,5 +204,5 @@ sudo apt install firefox
 ```
 
 ::: tip You're done! 🎉
-Ubuntu is installed and ready. Head over to the [App Alternatives](/linux/alternatives) page to find replacements for your favourite Windows apps.
+Ubuntu is installed and ready. Head over to the [App Alternatives](/en/linux/alternatives) page to find replacements for your favourite Windows apps.
 :::
