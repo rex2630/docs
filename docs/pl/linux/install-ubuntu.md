@@ -204,5 +204,5 @@ sudo apt install firefox
 ```
 
 ::: tip Gotowe! 🎉
-Ubuntu jest zainstalowane i gotowe. Przejdź na stronę [Alternatywy aplikacji](/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
+Ubuntu jest zainstalowane i gotowe. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
 :::
