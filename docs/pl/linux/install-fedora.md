@@ -221,5 +221,5 @@ Przyczyną jest szybkie uruchamianie Windows. W Windows:
 **Panel sterowania → Opcje zasilania → Wybierz działanie przycisków zasilania → odznacz Włącz szybkie uruchamianie**
 
 ::: tip Gotowe! 🎉
-Fedora KDE jest zainstalowana i gotowa. Przejdź na stronę [Alternatywy aplikacji](/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
+Fedora KDE jest zainstalowana i gotowa. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
 :::
