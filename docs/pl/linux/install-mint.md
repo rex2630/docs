@@ -209,5 +209,5 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 ::: tip Gotowe! 🎉
-Linux Mint jest zainstalowany i gotowy. Przejdź na stronę [Alternatywy aplikacji](/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
+Linux Mint jest zainstalowany i gotowy. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
 :::
