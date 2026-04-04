@@ -9,6 +9,30 @@ export const pl = {
       pattern: "https://github.com/rex2630/docs/edit/main/docs/:path",
       text: "Edytuj tę stronę na GitHubie",
     },
+
+    lastUpdated: {
+      text: "Ostatnia aktualizacja",
+      formatOptions: { dateStyle: "short", timeStyle: "short" },
+    },
+
+    outline: {
+      label: "Na tej stronie",
+    },
+
+    docFooter: {
+      prev: "Poprzednia strona",
+      next: "Następna strona",
+    },
+
+    darkModeSwitchLabel: "Wygląd",
+    lightModeSwitchTitle: "Przełącz na jasny motyw",
+    darkModeSwitchTitle: "Przełącz na ciemny motyw",
+
+    sidebarMenuLabel: "Menu",
+    returnToTopLabel: "Wróć na górę",
+    langMenuLabel: "Zmień język",
+    skipToContentLabel: "Przejdź do treści",
+
     nav: [
       { text: "Strona główna", link: "/pl/" },
       {
