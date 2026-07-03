@@ -130,7 +130,7 @@ Po přihlášení otevři **Konsole** (terminál KDE) a ihned spusť kompletní 
 sudo dnf upgrade --refresh -y
 ```
 
-### Instalace RPM Fusion (nezbytné pro gaming a multimédia)
+### Instalace RPM Fusion
 
 Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, multimediální kodeky, Steam a další:
 
@@ -139,6 +139,19 @@ sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
+
+### Instalace multimediálních kodeků
+
+Po přidání RPM Fusion doinstaluj kodeky a multimediální balíčky:
+
+```bash
+sudo dnf groupupdate multimedia --setop=install_weak_deps=False -y
+sudo dnf groupupdate sound-and-video -y
+```
+
+::: tip Proč je to důležité
+Bez těchto balíčků Fedora nemusí přehrát všechny běžné video a audio formáty. Po instalaci budeš mít hladší práci s multimédii i lepší podporu pro běžné desktopové použití.
+:::
 
 ### Instalace ovladačů NVIDIA (pokud je potřeba)
 
@@ -190,7 +203,7 @@ sudo dnf install iwlwifi-dkms    # některé Intel karty
 V GRUB menu stiskni **E**, najdi řádek `linux`, přidej `nomodeset` před `rhgb quiet`. Stiskni **F10** pro bootování. Pak aktivuj RPM Fusion a nainstaluj `akmod-nvidia` podle výše uvedeného postupu.
 
 ### Problémy s Waylandem a NVIDIA (tearing obrazovky, pády aplikací)
-Na rozdíl od Fedory GNOME (která je nyní čistě Wayland), **Fedora KDE stále podporuje X11**. Na přihlašovací obrazovce klikni na výběr session v levém dolním rohu a zvolte **Plasma (X11)** místo **Plasma (Wayland)**.
+Na rozdíl od Fedory GNOME (která je nyní čistě Wayland), **Fedora KDE stále podporuje X11**. Na přihlašovací obrazovce klikni na výběr session v levém dolním rohu a zvol **Plasma (X11)** místo **Plasma (Wayland)**.
 
 ### SELinux blokuje aplikaci
 Fedora používá SELinux pro bezpečnost, který občas blokuje aplikace. Zkontroluj upozornění SELinux v oznamovací oblasti a postupuj dle navrhovaného řešení, nebo ho dočasně přepni do permissive režimu:
