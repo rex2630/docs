@@ -5,7 +5,7 @@ description: A guide to installing Fedora KDE Plasma — a modern Linux distribu
 
 # Installing Fedora KDE
 
-Fedora is a modern, fast-moving distribution sponsored by Red Hat. It brings the latest software first — current GPU drivers, Proton updates, and kernel improvements usually arrive here before other mainstream distros. The KDE Plasma edition offers a clean, Windows-like desktop with a high degree of customization, making it a popular choice for gamers and developers who want up-to-date software without overly complicated system management. Fedora’s official documentation recommends Fedora Media Writer for boot media creation, and Fedora provides separate guidance for KDE Plasma and RPM Fusion setup [web:1][web:2][web:11].
+Fedora is a modern, fast-moving distribution sponsored by Red Hat. It brings the latest software first — current GPU drivers, Proton updates, and kernel improvements usually arrive here before other mainstream distros. The KDE Plasma edition offers a clean, Windows-like desktop with a high degree of customization, making it a popular choice for gamers and developers who want up-to-date software without overly complicated system management. Fedora’s official documentation recommends Fedora Media Writer for boot media creation, and Fedora provides separate guidance for KDE Plasma and RPM Fusion setup.
 
 ## Before you start
 
@@ -20,7 +20,7 @@ If you are installing on a physical machine, move all important files to an exte
 
 ## Step 1 — Downloading the ISO
 
-Fedora has its own tool for creating a bootable USB — **Fedora Media Writer** — which is the easiest option for Windows users. Fedora’s documentation explicitly recommends it for writing Fedora images correctly to USB media [web:1][web:9].
+Fedora has its own tool for creating a bootable USB — **Fedora Media Writer** — which is the easiest option for Windows users. Fedora’s documentation explicitly recommends it for writing Fedora images correctly to USB media.
 
 **Option A — Fedora Media Writer (recommended):**
 1. Go to [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/)
@@ -65,7 +65,7 @@ Fedora ships with the open-source Nouveau driver by default, which has limited N
 
 ## Step 4 — Installation type
 
-Fedora uses the **Anaconda** installer. The main screen shows all required items at once, and entries marked with a warning icon must be completed before you can continue. Fedora’s KDE documentation also points users to the KDE Plasma desktop or Kinoite options for KDE on Fedora [web:2].
+Fedora uses the **Anaconda** installer. The main screen shows all required items at once, and entries marked with a warning icon must be completed before you can continue. Fedora’s KDE documentation also points users to the KDE Plasma desktop or Kinoite options for KDE on Fedora.
 
 ### Option A: Replace everything
 
@@ -132,7 +132,7 @@ sudo dnf upgrade --refresh -y
 
 ### Installing RPM Fusion
 
-Fedora’s default repositories do not include proprietary software. **RPM Fusion** adds NVIDIA drivers, full FFmpeg, multimedia codecs, Steam, and other packages. Fedora’s RPM Fusion setup guide provides the official repository release packages [web:11].
+Fedora’s default repositories do not include proprietary software. **RPM Fusion** adds NVIDIA drivers, full FFmpeg, multimedia codecs, Steam, and other packages. Fedora’s RPM Fusion setup guide provides the official repository release packages.
 
 ```bash
 sudo dnf install \
@@ -142,7 +142,7 @@ sudo dnf install \
 
 ### Installing multimedia codecs
 
-RPM Fusion recommends replacing `ffmpeg-free` with the full RPM Fusion `ffmpeg`, because Fedora’s variant may not cover all common multimedia needs. RPM Fusion’s multimedia guide documents this setup [web:13].
+RPM Fusion recommends replacing `ffmpeg-free` with the full RPM Fusion `ffmpeg`, because Fedora’s variant may not cover all common multimedia needs. RPM Fusion’s multimedia guide documents this setup.
 
 ```bash
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
@@ -185,7 +185,7 @@ sudo dnf install libva-nvidia-driver
 
 ### NVIDIA drivers
 
-For most newer NVIDIA cards on Fedora, installing `akmod-nvidia` from RPM Fusion is the standard approach. Fedora and community guidance commonly use RPM Fusion for proprietary NVIDIA support [web:11][web:14][web:16].
+For most newer NVIDIA cards on Fedora, installing `akmod-nvidia` from RPM Fusion is the standard approach. Fedora and community guidance commonly use RPM Fusion for proprietary NVIDIA support.
 
 ```bash
 sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
