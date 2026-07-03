@@ -33,6 +33,7 @@ export const en = {
             { text: 'Linux Mint', link: '/en/linux/install-mint' },
             { text: 'Ubuntu', link: '/en/linux/install-ubuntu' },
             { text: 'Fedora', link: '/en/linux/install-fedora' },
+            { text: "Fedora", link: "/en/linux/install-cachyos" },
           ],
         },
         {
