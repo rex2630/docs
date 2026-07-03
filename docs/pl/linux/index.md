@@ -1,77 +1,82 @@
 ---
-title: Przewodnik szybkiego startu
-description: Przechodzisz z Windows na Linux? Oto wszystko, co musisz wiedzieć na początek.
+title: Szybki przewodnik po przejściu na Linuxa
+description: Przechodzisz z Windowsa na Linuxa? Tutaj znajdziesz wszystko, co trzeba wiedzieć na start.
 ---
 
-# Przewodnik szybkiego startu
+# Szybki przewodnik po przejściu na Linuxa
 
-Prawdopodobnie trafiłeś na tę stronę, bo myślisz o przejściu z Windows na Linux, ale nie wiesz od czego zacząć. Nie martw się — postaram się to maksymalnie ułatwić.
+Prawdopodobnie jesteś na tej stronie, bo myślisz o przejściu z Windowsa na Linuxa, ale nie wiesz, od czego zacząć. Spokojnie — postaram się maksymalnie to uprościć.
 
 [[toc]]
 
 ## Wybór dystrybucji
 
-Pomyśl o dystrybucji Linuxa jak o edycji Windows — ten sam rdzeń, inne doświadczenie. Oto co polecamy osobom przechodzącym z Windows:
+Pomyśl o dystrybucji Linuksa jak o edycji Windowsa — to samo jądro, ale inne doświadczenie. Oto nasze rekomendacje dla osób przechodzących z Windowsa:
 
-| Dystrybucja | Stabilność | Aktualność oprogramowania | Najlepsza dla | |
+| Dystrybucja | Stabilność | Świeżość oprogramowania | Najlepsza dla | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Ogólnych początkujących | [Przewodnik instalacji →](/pl/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Umiarkowana | Przechodzących z Windows | [Przewodnik instalacji →](/pl/linux/install-mint) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Średnia | Zupełnych początkujących | [Przewodnik instalacji →](/pl/linux/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Średnia | Osób przechodzących z Windowsa | [Przewodnik instalacji →](/pl/linux/install-mint) |
 | [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Bardzo aktualna | Graczy i deweloperów | [Przewodnik instalacji →](/pl/linux/install-fedora) |
+| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Najnowsze wersje | Graczy, deweloperów i zaawansowanych użytkowników | [Przewodnik instalacji →](/pl/linux/install-cachyos) |
 
-::: tip Nie wiesz którą wybrać?
-Jeśli chcesz po prostu coś, co działa od razu i wygląda znajomo, wybierz **Linux Mint**. Ma pasek zadań, menu Start i menedżer plików, które będą wyglądać jak w domu po przyjściu z Windows.
+::: tip Nie wiesz, co wybrać?
+Jeśli chcesz czegoś, co po instalacji po prostu „działa” i będzie wydawało się znajome po Windowsie, wybierz **Linux Mint**. Ma panel, menu aplikacji i menedżer plików, które będą bardzo znajome dla nowych użytkowników.
 
-Jeśli jesteś graczem, **Fedora** to świetny wybór — aktualne oprogramowanie oznacza, że najnowsze sterowniki GPU, aktualizacje Proton i narzędzia dla graczy są dostępne szybciej.
+Jeśli jesteś graczem albo deweloperem i chcesz możliwie najświeższego oprogramowania, świetnym wyborem będzie **Fedora** albo **CachyOS**. Fedora jest zwykle spokojniejsza i bardziej przewidywalna, a CachyOS celuje bardziej w wydajność, nowsze pakiety i ekosystem arch-based.
 :::
 
-::: warning Arch Linux
-Arch nie jest zalecany dla początkujących. Wymaga ręcznej konfiguracji i najlepiej podejść do niego dopiero po opanowaniu podstaw Linuxa.
+::: warning CachyOS
+CachyOS warto polecać początkującym raczej ostrożnie. Instalacja jest dużo prostsza niż w czystym Arch Linuxie, ale to nadal rolling release oparty na Archu, więc lepiej pasuje do użytkowników, którzy nie boją się czasem czegoś poprawić albo samodzielnie rozwiązać problem.
 :::
 
 ## Instalacja
 
-Instalacja Linuxa jako użytkownik Windows jest łatwiejsza niż się wydaje. Zalecany sposób to użycie narzędzia **Rufus** — czegoś, co możesz już znać z tworzenia nośników instalacyjnych Windows.
+Instalacja Linuksa dla użytkownika Windowsa jest prostsza, niż się wydaje. Najbardziej polecanym sposobem jest użycie **Rufusa** — narzędzia, które być może znasz już z tworzenia bootowalnych pendrive’ów z Windowsem. Wiki CachyOS wymienia też **Ventoy** i **balenaEtcher**, ale dla większości osób na Windowsie Rufus pozostaje najprostszą opcją.[web:22]
 
 ### Czego będziesz potrzebować
 - Pendrive z co najmniej **8 GB** wolnego miejsca
-- Plik ISO wybranej dystrybucji
-- [Rufus](https://rufus.ie) (aplikacja Windows, bezpłatna)
+- Obraz ISO wybranej dystrybucji
+- [Rufus](https://rufus.ie) (darmowa aplikacja dla Windows)
 
 ### Kroki
 
-1. Pobierz ISO wybranej dystrybucji z jej oficjalnej strony
-2. Otwórz Rufus, wybierz pendrive i pobrany plik ISO
-3. Kliknij **Start** i poczekaj na zakończenie
-4. Uruchom ponownie komputer i bootuj z USB (zazwyczaj **F12** lub **F11** przy starcie)
-5. Najpierw wypróbuj Linuxa na żywo z USB — żadnych zmian na komputerze!
-6. Gdy będziesz gotowy, kliknij **Zainstaluj** z pulpitu live
+1. Pobierz obraz ISO wybranej dystrybucji z jej oficjalnej strony
+2. Otwórz Rufusa, wybierz swój pendrive i pobrany obraz ISO
+3. Kliknij **START** i poczekaj na zakończenie procesu
+4. Uruchom ponownie komputer i zabootuj z USB, zwykle klawiszem **F12** albo **F11**
+5. Najpierw wypróbuj Linuksa w trybie live z pendrive’a — bez zmian na dysku
+6. Gdy będziesz gotowy, kliknij **Instaluj** z poziomu live desktopu
 
 ::: info Wypróbuj przed instalacją
-Każda większa dystrybucja Linuxa pozwala uruchomić się w pełni z USB bez instalowania czegokolwiek. Nazywa się to **sesją live** — idealne do sprawdzenia, czy sprzęt działa, zanim zdecydujesz się na stałe.
+Większość dużych dystrybucji Linuksa pozwala uruchomić system bezpośrednio z pendrive’a bez instalowania czegokolwiek. To tak zwana **sesja live** — idealna, żeby sprawdzić, czy twój sprzęt działa poprawnie, zanim zdecydujesz się na instalację.
 :::
 
-::: details Dual boot vs. całkowite przejście
-Nie musisz od razu zastępować Windows. Podczas instalacji możesz wybrać zainstalowanie Linuxa **obok Windows** i wybierać, który system uruchomić przy starcie. Nazywa się to dual bootem i jest świetnym sposobem na stopniowe przejście.
+::: details Dual boot czy pełne przejście
+Nie musisz od razu usuwać Windowsa. W czasie instalacji możesz wybrać instalację Linuksa **obok Windowsa** i przy uruchamianiu komputera decydować, który system uruchomić. To nazywa się dual boot i jest świetnym sposobem na spokojne przyzwyczajenie się do zmiany.
+
+W przypadku dystrybucji takich jak CachyOS warto jednak pamiętać, że dual boot bywa bardziej wrażliwy na poprawną konfigurację partycji, Secure Boota, Fast Startupu albo BitLockera niż bardziej konserwatywne dystrybucje.
 :::
 
 ## Pierwsze kroki po instalacji
 
-Gdy już wszystko działa, oto co zrobić najpierw:
+Gdy system już działa, oto co warto zrobić najpierw:
 
-1. **Zaktualizuj system** — otwórz Menedżera aktualizacji lub Centrum oprogramowania
-2. **Zainstaluj przeglądarkę** — Firefox jest preinstalowany, lub pobierz Chrome ze sklepu z aplikacjami
-3. **Sprawdź konfigurację gier** — jeśli używasz Fedory, zainstaluj [Steam](https://store.steampowered.com/about/) i włącz **Proton** w ustawieniach, aby grać w gry Windows
-4. **Poznaj sklep z aplikacjami** — większość znanych aplikacji ma wersje na Linuxa lub dobre alternatywy
+1. **Zaktualizuj system** — otwórz Menedżera aktualizacji albo Centrum oprogramowania
+2. **Zainstaluj przeglądarkę** — Firefox często jest preinstalowany, ale możesz też pobrać Chrome ze sklepu z aplikacjami
+3. **Skonfiguruj granie** — zainstaluj [Steam](https://store.steampowered.com/about/) i w ustawieniach aktywuj **Proton**, aby uruchamiać gry z Windowsa
+4. **Przejrzyj sklep z aplikacjami** — większość znanych programów ma wersję linuksową albo dobrą alternatywę
+5. **Doinstaluj sterowniki i narzędzia** — szczególnie jeśli używasz GPU NVIDIA albo chcesz lepiej dostroić system pod gry i wydajność
 
-::: tip Granie na Linuxie
-Warstwa kompatybilności **Proton** Steama pozwala grać w ogromną bibliotekę gier tylko na Windows — na Linuxie. Strony takie jak [ProtonDB](https://www.protondb.com) pozwalają sprawdzić, czy twoje ulubione gry działają dobrze.
+::: tip Granie na Linuksie
+Warstwa kompatybilności **Proton** od Steama pozwala uruchamiać ogromną bibliotekę gier tylko dla Windowsa również na Linuksie. Na stronach takich jak [ProtonDB](https://www.protondb.com) możesz sprawdzić, jak dobrze działają twoje ulubione tytuły.
 :::
 
 ## Potrzebujesz pomocy?
 
-Społeczność Linuxa jest bardzo przyjazna dla nowych użytkowników. Oto najlepsze miejsca, gdzie możesz zadawać pytania:
+Społeczność Linuksa jest zwykle bardzo przyjazna dla nowych użytkowników. Oto kilka dobrych miejsc do zadawania pytań:
 
-- [r/linux4noobs](https://reddit.com/r/linux4noobs) — przyjazna dla początkujących społeczność na Reddit
-- [r/linux_gaming](https://www.reddit.com/r/linux_gaming/) — jeśli przechodzisz ze względu na gry
-- [Linux Mint Forums](https://forums.linuxmint.com) — jeśli wybrałeś Mint
+- [r/linux4noobs](https://reddit.com/r/linux4noobs) — przyjazna społeczność dla początkujących
+- [r/linux_gaming](https://www.reddit.com/r/linux_gaming/) — jeśli przechodzisz głównie ze względu na granie
+- [Linux Mint Forums](https://forums.linuxmint.com) — jeśli wybrałeś Minta
+- [CachyOS Wiki](https://wiki.cachyos.org/) — jeśli zdecydowałeś się na CachyOS
