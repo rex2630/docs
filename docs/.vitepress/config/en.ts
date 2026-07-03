@@ -42,6 +42,12 @@ export const en = {
             { text: 'Windows App Alternatives', link: '/en/linux/alternatives' },
           ],
         },
+        {
+          text: "File systems",
+          items: [
+            { text: "Convert NTFS to Btrfs", link: "/en/linux/ntfs-to-btrfs" },
+          ],
+        },
       ],
     },
   },
