@@ -132,7 +132,7 @@ sudo dnf upgrade --refresh -y
 
 ### Instalace RPM Fusion
 
-Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, plný FFmpeg, multimediální kodeky, Steam a další balíčky.[web:23]
+Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, plný FFmpeg, multimediální kodeky, Steam a další balíčky.
 
 ```bash
 sudo dnf install \
@@ -142,13 +142,13 @@ sudo dnf install \
 
 ### Instalace multimediálních kodeků
 
-RPM Fusion doporučuje přejít z `ffmpeg-free` na plnou RPM Fusion variantu `ffmpeg`, protože Fedora varianta může čas od času narážet na version mismatch.[web:23]
+RPM Fusion doporučuje přejít z `ffmpeg-free` na plnou RPM Fusion variantu `ffmpeg`, protože Fedora varianta může čas od času narážet na version mismatch.
 
 ```bash
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 ```
 
-Potom doinstaluj multimediální skupinu pro GStreamer a další aplikace používající běžné audio a video formáty.[web:23]
+Potom doinstaluj multimediální skupinu pro GStreamer a další aplikace používající běžné audio a video formáty.
 
 ```bash
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
@@ -160,7 +160,7 @@ Bez této části může Fedora po čisté instalaci postrádat podporu pro něk
 
 ### Hardwarová akcelerace kodeků
 
-Pokud chceš lepší přehrávání videa s akcelerací přes GPU, RPM Fusion doporučuje podle typu grafiky tyto balíčky.[web:23]
+Pokud chceš lepší přehrávání videa s akcelerací přes GPU, RPM Fusion doporučuje podle typu grafiky tyto balíčky.
 
 **AMD (Mesa):**
 ```bash
@@ -184,7 +184,7 @@ sudo dnf install libva-nvidia-driver
 ```
 
 ::: details 32bit knihovny pro Steam a starší hry
-Pokud používáš Steam, Proton nebo některé starší hry, může se hodit i 32bit varianta části balíčků.[web:23]
+Pokud používáš Steam, Proton nebo některé starší hry, může se hodit i 32bit varianta části balíčků.
 
 Například pro NVIDIA:
 ```bash
@@ -194,19 +194,19 @@ sudo dnf install libva-nvidia-driver.{i686,x86_64}
 
 ### Instalace ovladačů NVIDIA (pokud je potřeba)
 
-Pro většinu novějších NVIDIA karet na Fedoře stačí z RPM Fusion nainstalovat `akmod-nvidia`. Pokud používáš OBS, NVENC nebo CUDA akceleraci, hodí se přidat i CUDA balíček.[web:33][web:37]
+Pro většinu novějších NVIDIA karet na Fedoře stačí z RPM Fusion nainstalovat `akmod-nvidia`. Pokud používáš OBS, NVENC nebo CUDA akceleraci, hodí se přidat i CUDA balíček.
 
 ```bash
 sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
 ```
 
-Po dokončení **nerestartuj ihned**. Balíček `akmod-nvidia` nejdřív sestaví kernel modul pro tvoje aktuální jádro, což může několik minut trvat.[web:33][web:37]
+Po dokončení **nerestartuj ihned**. Balíček `akmod-nvidia` nejdřív sestaví kernel modul pro tvoje aktuální jádro, což může několik minut trvat.
 
 ::: warning NVIDIA na Fedoře — trpělivost
-Po instalaci počkej, dokud se terminál plně nevrátí k promptu. Předčasný restart může způsobit nabootování bez správně sestaveného ovladače a skončit černou obrazovkou.[web:33][web:37]
+Po instalaci počkej, dokud se terminál plně nevrátí k promptu. Předčasný restart může způsobit nabootování bez správně sestaveného ovladače a skončit černou obrazovkou.
 :::
 
-Pokud máš zapnutý **Secure Boot** a proprietární NVIDIA ovladač se nenačte, bude pravděpodobně potřeba podepsat akmods modul přes MOK workflow (`kmodgenca`, `mokutil`, import klíče a potvrzení při rebootu).[web:33]
+Pokud máš zapnutý **Secure Boot** a proprietární NVIDIA ovladač se nenačte, bude pravděpodobně potřeba podepsat akmods modul přes MOK workflow (`kmodgenca`, `mokutil`, import klíče a potvrzení při rebootu).
 
 ::: details Secure Boot + NVIDIA
 Pokud chceš ponechat Secure Boot zapnutý, můžeš postupovat takto:
@@ -217,7 +217,7 @@ sudo kmodgenca -a
 sudo mokutil --import /etc/pki/akmods/certs/public_key.der
 ```
 
-Potom restartuj, v modré obrazovce **MOK Manager** zvol **Enroll MOK**, potvrď import klíče a po dalším restartu nech systém dokončit build modulu.[web:33]
+Potom restartuj, v modré obrazovce **MOK Manager** zvol **Enroll MOK**, potvrď import klíče a po dalším restartu nech systém dokončit build modulu.
 :::
 
 ### Herní nastavení
