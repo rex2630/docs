@@ -5,7 +5,7 @@ description: Průvodce instalací Fedory KDE Plasma — moderní linuxová distr
 
 # Instalace Fedory KDE
 
-Fedora je moderní, rychle se vyvíjející distribuce sponzorovaná společností Red Hat. Přináší nejnovější software — aktuální ovladače GPU, aktualizace Protonu a vylepšení jádra dorazí sem jako první. Edice KDE Plasma nabízí přehledné, Windows-podobné prostředí s vysokou mírou přizpůsobení a zhruba o 20–30 % nižší spotřebou RAM oproti GNOME Workstation verzi. To z ní dělá oblíbenou volbu hráčů i vývojářů, kteří chtějí to nejnovější bez ztráty stability.
+Fedora je moderní, rychle se vyvíjející distribuce sponzorovaná společností Red Hat. Přináší nejnovější software — aktuální ovladače GPU, aktualizace Protonu a vylepšení jádra dorazí sem jako první. Edice KDE Plasma nabízí přehledné, Windows-podobné prostředí s vysokou mírou přizpůsobení. To z ní dělá oblíbenou volbu hráčů i vývojářů, kteří chtějí aktuální software bez zbytečně složité správy systému.
 
 ## Než začneš
 
@@ -49,15 +49,15 @@ Stáhne nejnovější ISO a rovnou ho zapíše na USB — není potřeba spravov
 | Acer | F12 |
 | MSI | F11 |
 
-3. Vyber své USB a zvolte **Start Fedora KDE Plasma Desktop Live**
+3. Vyber své USB a zvol **Start Fedora KDE Plasma Desktop Live**
 
 ::: info Secure Boot na Fedoře
-Na rozdíl od jiných distribucí **Fedora plně podporuje Secure Boot** — neměl by být potřeba ho vypínat. Pokud narazíš na problémy s bootováním, nejdřív ověř, že bylo USB správně zapsáno.
+Fedora podporuje Secure Boot, takže ho ve většině případů není potřeba vypínat. Pokud narazíš na problém s bootováním, nejdřív ověř, že bylo USB správně zapsáno.
 :::
 
 ## Krok 3 — Vyzkoušení live prostředí
 
-Fedora nabootuje do živého desktopového prostředí KDE Plasma. Otestuj hardware — Wi-Fi, zvuk, displej — ještě před instalací. Až budeš připraven, dvakrát klikni na ikonu **Instalovat na disk** na ploše nebo ji najdi ve spouštěči aplikací.
+Fedora nabootuje do živého desktopového prostředí KDE Plasma. Otestuj hardware — Wi‑Fi, zvuk, displej — ještě před instalací. Až budeš připraven, dvakrát klikni na ikonu **Instalovat na disk** na ploše nebo ji najdi ve spouštěči aplikací.
 
 ::: warning NVIDIA GPU v live session
 Fedora standardně obsahuje open-source ovladač Nouveau s omezenou podporou NVIDIA. Obrazovka může být zaseknutá na nízkém rozlišení nebo mít slabý výkon. To je normální — správné ovladače NVIDIA nainstaluješ po dokončení instalace.
@@ -97,7 +97,7 @@ Nejdřív zmenš oddíl Windows:
 1. Ve Windows stiskni **Win + X** → **Správa disků**
 2. Pravé tlačítko na disk C: → **Zmenšit svazek**
 3. Zadej množství v MB (např. `51200` pro 50 GB)
-4. Klikni na **Zmenšit** — uvolněné místo se zobrazí jako „Nepřiděleno"
+4. Klikni na **Zmenšit** — uvolněné místo se zobrazí jako „Nepřiděleno“
 5. V Anacondě bude toto místo k dispozici pro Fedoru
 :::
 
@@ -120,7 +120,7 @@ Jak vypnout rychlý start Windows (doporučeno pro dual boot):
 
 Po restartu Fedora KDE spustí stručného **průvodce nastavením**:
 
-1. Připoj se k Wi-Fi
+1. Připoj se k Wi‑Fi
 2. Nastav předvolby soukromí
 3. Vytvoř uživatelský účet a heslo
 
@@ -132,7 +132,7 @@ sudo dnf upgrade --refresh -y
 
 ### Instalace RPM Fusion
 
-Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, multimediální kodeky, Steam a další:
+Výchozí repozitáře Fedory neobsahují proprietární software. **RPM Fusion** přidává ovladače NVIDIA, plný FFmpeg, multimediální kodeky, Steam a další balíčky.[web:23]
 
 ```bash
 sudo dnf install \
@@ -142,34 +142,87 @@ sudo dnf install \
 
 ### Instalace multimediálních kodeků
 
-Po přidání RPM Fusion doinstaluj kodeky a multimediální balíčky:
+RPM Fusion doporučuje přejít z `ffmpeg-free` na plnou RPM Fusion variantu `ffmpeg`, protože Fedora varianta může čas od času narážet na version mismatch.[web:23]
 
 ```bash
-sudo dnf groupupdate multimedia --setop=install_weak_deps=False -y
-sudo dnf groupupdate sound-and-video -y
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+```
+
+Potom doinstaluj multimediální skupinu pro GStreamer a další aplikace používající běžné audio a video formáty.[web:23]
+
+```bash
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
 
 ::: tip Proč je to důležité
-Bez těchto balíčků Fedora nemusí přehrát všechny běžné video a audio formáty. Po instalaci budeš mít hladší práci s multimédii i lepší podporu pro běžné desktopové použití.
+Bez této části může Fedora po čisté instalaci postrádat podporu pro některé běžné audio a video formáty. Přidání plného FFmpeg a multimedia skupiny z RPM Fusion zlepší přehrávání videa, hudby i kompatibilitu aplikací.
+:::
+
+### Hardwarová akcelerace kodeků
+
+Pokud chceš lepší přehrávání videa s akcelerací přes GPU, RPM Fusion doporučuje podle typu grafiky tyto balíčky.[web:23]
+
+**AMD (Mesa):**
+```bash
+sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
+sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+```
+
+**Intel (novější generace):**
+```bash
+sudo dnf install intel-media-driver
+```
+
+**Intel (starší generace):**
+```bash
+sudo dnf install libva-intel-driver
+```
+
+**NVIDIA:**
+```bash
+sudo dnf install libva-nvidia-driver
+```
+
+::: details 32bit knihovny pro Steam a starší hry
+Pokud používáš Steam, Proton nebo některé starší hry, může se hodit i 32bit varianta části balíčků.[web:23]
+
+Například pro NVIDIA:
+```bash
+sudo dnf install libva-nvidia-driver.{i686,x86_64}
+```
 :::
 
 ### Instalace ovladačů NVIDIA (pokud je potřeba)
 
-Po aktivaci RPM Fusion:
+Pro většinu novějších NVIDIA karet na Fedoře stačí z RPM Fusion nainstalovat `akmod-nvidia`. Pokud používáš OBS, NVENC nebo CUDA akceleraci, hodí se přidat i CUDA balíček.[web:33][web:37]
 
 ```bash
-sudo dnf install akmod-nvidia
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
 ```
 
-Po dokončení restartuj. Sestavení modulu trvá několik minut — **nerestaruj ihned**, počkej než se terminál plně vrátí k promptu.
+Po dokončení **nerestartuj ihned**. Balíček `akmod-nvidia` nejdřív sestaví kernel modul pro tvoje aktuální jádro, což může několik minut trvat.[web:33][web:37]
 
 ::: warning NVIDIA na Fedoře — trpělivost
-Balíček `akmod-nvidia` sestaví modul ovladače pro tvoje konkrétní jádro. To trvá **2–5 minut** po instalaci. Pokud restartuješ příliš brzy, nabootuješ bez ovladače a dostaneš černou obrazovku. Počkej, dokud se terminál plně nevrátí k promptu.
+Po instalaci počkej, dokud se terminál plně nevrátí k promptu. Předčasný restart může způsobit nabootování bez správně sestaveného ovladače a skončit černou obrazovkou.[web:33][web:37]
+:::
+
+Pokud máš zapnutý **Secure Boot** a proprietární NVIDIA ovladač se nenačte, bude pravděpodobně potřeba podepsat akmods modul přes MOK workflow (`kmodgenca`, `mokutil`, import klíče a potvrzení při rebootu).[web:33]
+
+::: details Secure Boot + NVIDIA
+Pokud chceš ponechat Secure Boot zapnutý, můžeš postupovat takto:
+
+```bash
+sudo dnf install kmodtool akmods mokutil openssl
+sudo kmodgenca -a
+sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+```
+
+Potom restartuj, v modré obrazovce **MOK Manager** zvol **Enroll MOK**, potvrď import klíče a po dalším restartu nech systém dokončit build modulu.[web:33]
 :::
 
 ### Herní nastavení
 
-1. Nainstaluj **Steam** z **Discoveru** (obchod se softwarem KDE) nebo přes terminál:
+1. Nainstaluj **Steam** z **Discoveru** nebo přes terminál:
 ```bash
 sudo dnf install steam
 ```
@@ -178,7 +231,7 @@ sudo dnf install steam
 4. Vyber nejnovější verzi **Protonu**
 
 ::: tip Nejdřív zkontroluj své hry
-Před přechodem se podívej na [ProtonDB](https://www.protondb.com), jak dobře tvoje hry fungují. Většina AAA titulů a populárních her na Fedoře funguje skvěle — zejména s nejnovějším jádrem a ovladači Mesa/NVIDIA.
+Před přechodem se podívej na [ProtonDB](https://www.protondb.com), jak dobře tvoje hry fungují. Fedora s aktuálním jádrem, Mesa stackem a RPM Fusion balíčky bývá pro gaming velmi dobrý základ.
 :::
 
 ## Časté problémy a řešení
@@ -191,7 +244,7 @@ Pokud PC bootuje přímo do Windows:
 
 Nebo vstup do BIOSu a nastav **Fedoru** jako první možnost bootování.
 
-### Wi-Fi nefunguje po instalaci
+### Wi‑Fi nefunguje po instalaci
 Nejčastěji u karet Broadcom nebo některých Intel. Připoj se přes ethernet a spusť:
 ```bash
 sudo dnf install akmod-wl        # Broadcom
@@ -199,11 +252,11 @@ sudo dnf install akmod-wl        # Broadcom
 sudo dnf install iwlwifi-dkms    # některé Intel karty
 ```
 
-### Černá obrazovka po instalaci (NVIDIA, RPM Fusion ještě není)
-V GRUB menu stiskni **E**, najdi řádek `linux`, přidej `nomodeset` před `rhgb quiet`. Stiskni **F10** pro bootování. Pak aktivuj RPM Fusion a nainstaluj `akmod-nvidia` podle výše uvedeného postupu.
+### Černá obrazovka po instalaci NVIDIA ovladačů
+V GRUB menu stiskni **E**, najdi řádek `linux`, přidej `nomodeset` před `rhgb quiet`. Stiskni **F10** pro bootování. Pak zkontroluj, že je RPM Fusion aktivní, ovladač je doinstalovaný a akmods build doběhl korektně.
 
-### Problémy s Waylandem a NVIDIA (tearing obrazovky, pády aplikací)
-Na rozdíl od Fedory GNOME (která je nyní čistě Wayland), **Fedora KDE stále podporuje X11**. Na přihlašovací obrazovce klikni na výběr session v levém dolním rohu a zvol **Plasma (X11)** místo **Plasma (Wayland)**.
+### Problémy s Waylandem a NVIDIA
+Fedora KDE stále podporuje i **X11** session. Na přihlašovací obrazovce klikni na výběr session v levém dolním rohu a zvol **Plasma (X11)** místo **Plasma (Wayland)**, pokud narazíš na tearing, pády aplikací nebo grafické artefakty.
 
 ### SELinux blokuje aplikaci
 Fedora používá SELinux pro bezpečnost, který občas blokuje aplikace. Zkontroluj upozornění SELinux v oznamovací oblasti a postupuj dle navrhovaného řešení, nebo ho dočasně přepni do permissive režimu:
