@@ -78,8 +78,6 @@ Nejbezpečnější je převádět oddíl, který právě nepoužívá běžící
 
 ## Převod
 
-Man page používá syntaxi `ntfs2btrfs [options] device` a upstream jako příklad na Linuxu uvádí `ntfs2btrfs /dev/sda1`.
-
 ```bash
 sudo ntfs2btrfs /dev/sdX1
 ```
@@ -106,7 +104,7 @@ Pokud je všechno v pořádku, nech si `image` subvolume ještě nějakou dobu j
 
 ## Návrat zpět na NTFS
 
-Man page podporuje rollback pomocí přepínače `--rollback`, ale platí to jen dokud zůstává původní image použitelná.
+Existuje podpora rollback pomocí `--rollback`, ale platí to jen dokud zůstává původní image použitelný.
 
 ```bash
 sudo ntfs2btrfs --rollback /dev/sdX1
