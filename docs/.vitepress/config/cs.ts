@@ -68,6 +68,7 @@ export const cs = {
             { text: "Linux Mint", link: "/cs/linux/install-mint" },
             { text: "Ubuntu", link: "/cs/linux/install-ubuntu" },
             { text: "Fedora", link: "/cs/linux/install-fedora" },
+            { text: "Fedora", link: "/cs/linux/install-cachyos" },
           ],
         },
         {
