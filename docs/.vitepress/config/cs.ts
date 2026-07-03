@@ -77,6 +77,12 @@ export const cs = {
             { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
           ],
         },
+        {
+          text: "Souborové systémy",
+          items: [
+            { text: "Převod NTFS na Btrfs", link: "/cs/linux/ntfs-to-btrfs" },
+          ],
+        },
       ],
     },
   },
