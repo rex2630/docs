@@ -23,12 +23,12 @@ Pokud instaluješ na fyzický počítač, přesuň všechny důležité soubory 
 Fedora má vlastní nástroj pro vytvoření bootovacího USB — **Fedora Media Writer** — nejjednodušší možnost pro uživatele Windows.
 
 **Možnost A — Fedora Media Writer (doporučeno):**
-1. Jdi na [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/)
+1. Jdi na [fedoraproject.org/spins/kde](https://fedoraproject.org/kde/download/)
 2. Klikni na **Stáhnout Fedora Media Writer** a nainstaluj ho
 3. Otevři ho, vyber **Fedora KDE Plasma Desktop**, klikni na **Stáhnout a zapsat** — automaticky stáhne ISO a zapíše ho na USB
 
 **Možnost B — Ruční ISO + Rufus:**
-1. Stáhni ISO z [fedoraproject.org/spins/kde](https://fedoraproject.org/spins/kde/) → klikni na **Pro x86_64**
+1. Stáhni ISO z [fedoraproject.org/spins/kde](https://fedoraproject.org/kde/download/) → klikni na **Pro x86_64**
 2. Otevři [Rufus](https://rufus.ie), vyber USB a ISO soubor, klikni na **START**
 
 ::: tip Fedora Media Writer šetří čas
