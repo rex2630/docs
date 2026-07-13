@@ -21,9 +21,11 @@ Představ si linuxovou distribuci jako edici Windows — stejné jádro, jiný z
 | [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Nejnovější verze | Hráče, vývojáře a pokročilé uživatele | [Průvodce instalací →](/cs/linux/install-cachyos) |
 
 ::: tip Nevíš, kterou si vybrat?
-Pokud chceš něco, co prostě „funguje" hned po instalaci a bude ti připadat povědomé, zvol **Linux Mint**. Má hlavní panel, nabídku Start a správce souborů, které ti budou připadat jako doma po přechodu z Windows.
+Pokud chceš něco, co prostě funguje hned po instalaci a připomíná Windows, zvol Linux Mint.
 
-Pokud jsi hráč nebo vývojář a chceš co nejaktuálnější software, skvělá volba je **Fedora** nebo **CachyOS**. Fedora bývá konzervativnější a klidnější, zatímco CachyOS míří víc na výkon, novější balíčky a arch-based ekosystém.
+Pokud jsi hráč nebo vývojář a chceš aktuální software, sáhni po Fedoře (stabilnější) nebo CachyOS (výkon, Arch base).
+
+Nejsi si jistý? Distribuce si můžeš vyzkoušet online bez instalace, třeba přes [DistroSea](https://distrosea.com/).
 :::
 
 ::: warning CachyOS
