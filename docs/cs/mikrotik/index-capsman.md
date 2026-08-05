@@ -131,5 +131,8 @@ V dalších částech pokryjeme:
 3. **Více SSID a VLANy**  
    Jak oddělit guest, IoT a management provoz.
 
-4. **Troubleshooting**  
+4. **CAPsMAN řízený upgrade zařízení**  
+   Jak řízeně aktualizovat zařízení pod CAPsMAN správou.
+
+5. **Troubleshooting**  
    Co dělat, když se CAP nepřipojí, SSID se nezobrazí nebo roaming nefunguje dobře.
