@@ -12,7 +12,7 @@ export const en = {
     nav: [
       { text: 'Home', link: '/en/' },
       { text: "Linux", link: "/en/linux/" },
-      { text: "Mikrotik", link: "/en/mikrotik/mikrotik-doh-cloudflare" },
+      { text: "Mikrotik", link: "/en/mikrotik/" },
     ],
     sidebar: {
       '/en/linux/': [
@@ -48,7 +48,18 @@ export const en = {
         {
           text: "DNS",
           items: [
-            { text: "Cloudflare DoH", link: "/en/mikrotik/mikrotik-doh-cloudflare" },
+            { text: "Cloudflare DoH", link: "/en/mikrotik/dns/doh-cloudflare" },
+          ],
+        },
+        {
+          text: "CAPsMAN",
+          items: [
+            { text: "Introduction", link: "/en/mikrotik/caps/" },
+            { text: "Preparation", link: "/en/mikrotik/capsman-prep" },
+            { text: "Configuration", link: "/en/mikrotik/caps/config" },
+            { text: "VLAN", link: "/en/mikrotik/caps/vlan" },
+            { text: "Managed upgrade", link: "/en/mikrotik/caps/upgrade" },
+            { text: "Troubleshooting", link: "/en/mikrotik/caps/troubleshooting" },
           ],
         },
       ],

@@ -47,7 +47,7 @@ export const cs = {
     nav: [
       { text: "Domů", link: "/cs/" },
       { text: "Linux", link: "/cs/linux/" },
-      { text: "Mikrotik", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
+      { text: "Mikrotik", link: "/cs/mikrotik/" },
     ],
     sidebar: {
       "/cs/linux/": [
@@ -83,18 +83,18 @@ export const cs = {
         {
           text: "DNS",
           items: [
-            { text: "Cloudflare DoH", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
+            { text: "Cloudflare DoH", link: "/cs/mikrotik/dns/doh-cloudflare" },
           ],
         },
         {
           text: "CAPsMAN",
           items: [
-            { text: "Úvod", link: "/cs/mikrotik/index-capsman" },
+            { text: "Úvod", link: "/cs/mikrotik/caps/" },
             { text: "Příprava", link: "/cs/mikrotik/capsman-prep" },
-            { text: "Konfigurace", link: "/cs/mikrotik/capsman-config" },
-            { text: "VLAN", link: "/cs/mikrotik/capsman-vlan" },
-            { text: "Řízený upgrade", link: "/cs/mikrotik/capsman-upgrade" },
-            { text: "Troubleshooting", link: "/cs/mikrotik/capsman-troubleshooting" },
+            { text: "Konfigurace", link: "/cs/mikrotik/caps/config" },
+            { text: "VLAN", link: "/cs/mikrotik/caps/vlan" },
+            { text: "Řízený upgrade", link: "/cs/mikrotik/caps/upgrade" },
+            { text: "Troubleshooting", link: "/cs/mikrotik/caps/troubleshooting" },
           ],
         },
       ],
