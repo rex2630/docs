@@ -93,7 +93,7 @@ export const cs = {
             { text: "Příprava", link: "/cs/mikrotik/capsman-prep" },
             { text: "Konfigurace", link: "/cs/mikrotik/capsman-config" },
             { text: "VLAN", link: "/cs/mikrotik/capsman-vlan" },
-            { text: "Řízený upgrade", link: "/cs/mikrotik/capsman-controlled-upgrade" },
+            { text: "Řízený upgrade", link: "/cs/mikrotik/capsman-upgrade" },
             { text: "Troubleshooting", link: "/cs/mikrotik/capsman-troubleshooting" },
           ],
         },
