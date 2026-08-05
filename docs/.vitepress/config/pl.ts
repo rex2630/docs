@@ -35,13 +35,8 @@ export const pl = {
 
     nav: [
       { text: "Strona główna", link: "/pl/" },
-      {
-        text: "Linux",
-        items: [
-          { text: "Szybki start", link: "/pl/linux/" },
-          { text: "Alternatywy dla aplikacji Windows", link: "/pl/linux/alternatives" },
-        ],
-      },
+      { text: "Linux", link: "/en/linux/" },
+      { text: "Mikrotik", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
     ],
     sidebar: {
       "/pl/linux/": [
@@ -70,6 +65,14 @@ export const pl = {
           text: "Systemy plików",
           items: [
             { text: "Konwersja NTFS na Btrfs", link: "/pl/linux/ntfs-to-btrfs" },
+          ],
+        },
+      ],
+      "/pl/mikrotik/": [
+        {
+          text: "DNS",
+          items: [
+            { text: "Cloudflare DoH", link: "/pl/mikrotik/mikrotik-doh-cloudflare" },
           ],
         },
       ],

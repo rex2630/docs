@@ -46,13 +46,8 @@ export const cs = {
 
     nav: [
       { text: "Domů", link: "/cs/" },
-      {
-        text: "Linux",
-        items: [
-          { text: "Rychlý přechod", link: "/cs/linux/" },
-          { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
-        ],
-      },
+      { text: "Linux", link: "/cs/linux/" },
+      { text: "Mikrotik", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
     ],
     sidebar: {
       "/cs/linux/": [
@@ -81,6 +76,14 @@ export const cs = {
           text: "Souborové systémy",
           items: [
             { text: "Převod NTFS na Btrfs", link: "/cs/linux/ntfs-to-btrfs" },
+          ],
+        },
+      ],
+      "/cs/mikrotik/": [
+        {
+          text: "DNS",
+          items: [
+            { text: "Cloudflare DoH", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
           ],
         },
       ],
