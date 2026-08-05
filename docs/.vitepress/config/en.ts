@@ -55,7 +55,7 @@ export const en = {
           text: "CAPsMAN",
           items: [
             { text: "Introduction", link: "/en/mikrotik/caps/" },
-            { text: "Preparation", link: "/en/mikrotik/capsman-prep" },
+            { text: "Preparation", link: "/en/mikrotik/caps/preparation" },
             { text: "Configuration", link: "/en/mikrotik/caps/config" },
             { text: "VLAN", link: "/en/mikrotik/caps/vlan" },
             { text: "Managed upgrade", link: "/en/mikrotik/caps/upgrade" },

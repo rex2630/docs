@@ -90,7 +90,7 @@ export const cs = {
           text: "CAPsMAN",
           items: [
             { text: "Úvod", link: "/cs/mikrotik/caps/" },
-            { text: "Příprava", link: "/cs/mikrotik/capsman-prep" },
+            { text: "Příprava", link: "/cs/mikrotik/caps/preparation" },
             { text: "Konfigurace", link: "/cs/mikrotik/caps/config" },
             { text: "VLAN", link: "/cs/mikrotik/caps/vlan" },
             { text: "Řízený upgrade", link: "/cs/mikrotik/caps/upgrade" },
