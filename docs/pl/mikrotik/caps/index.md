@@ -11,11 +11,11 @@ Ten przewodnik opisuje pełną konfigurację CAPsMAN w RouterOS 7+ dla nowoczesn
 
 ## Spis treści
 
-- [Planowanie częstotliwości i kanałów](./capsman-prep.md)
-- [Podstawowa konfiguracja](./capsman-config.md)
-- [VLAN-y i wiele SSID](./capsman-vlan.md)
-- [Kontrolowany upgrade urządzeń](./capsman-upgrade.md)
-- [Troubleshooting](./capsman-troubleshooting.md)
+- [Planowanie częstotliwości i kanałów](./preparation.md)
+- [Podstawowa konfiguracja](./config.md)
+- [VLAN-y i wiele SSID](./vlan.md)
+- [Kontrolowany upgrade urządzeń](./upgrade.md)
+- [Troubleshooting](./troubleshooting.md)
 
 ## Czym jest CAPsMAN
 

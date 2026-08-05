@@ -11,11 +11,11 @@ Tento průvodce popisuje kompletní nastavení CAPsMAN v RouterOS 7+ pro modern�
 
 ## Obsah
 
-- [Plánování frekvencí a kanálů](./capsman-prep.md)
-- [Základní konfigurace](./capsman-config.md)
-- [VLANy a více SSID](./capsman-vlan.md)
-- [Řízený upgrade zařízení](./capsman-upgrade.md)
-- [Troubleshooting](./capsman-troubleshooting.md)
+- [Plánování frekvencí a kanálů](./preparation.md)
+- [Základní konfigurace](./config.md)
+- [VLANy a více SSID](./vlan.md)
+- [Řízený upgrade zařízení](./upgrade.md)
+- [Troubleshooting](./troubleshooting.md)
 
 ## Co je CAPsMAN
 

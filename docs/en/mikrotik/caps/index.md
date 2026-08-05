@@ -11,11 +11,11 @@ This guide describes the complete CAPsMAN setup in RouterOS 7+ for modern MikroT
 
 ## Contents
 
-- [Frequency and channel planning](./capsman-prep.md)
-- [Basic configuration](./capsman-config.md)
-- [VLANs and multiple SSIDs](./capsman-vlan.md)
-- [Managed device upgrades](./capsman-upgrade.md)
-- [Troubleshooting](./capsman-troubleshooting.md)
+- [Frequency and channel planning](./preparation.md)
+- [Basic configuration](./config.md)
+- [VLANs and multiple SSIDs](./vlan.md)
+- [Managed device upgrades](./upgrade.md)
+- [Troubleshooting](./troubleshooting.md)
 
 ## What CAPsMAN is
 
