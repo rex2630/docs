@@ -11,7 +11,7 @@ Ta sekcja służy jako punkt startowy do praktycznych poradników dotyczących M
 ## Poradniki
 
 ### Funkcje sieciowe
-- [DNS i resolver](./dns/)
+- [DNS i resolver](./dns/doh-cloudflare)
 
 ### Zaawansowane
 - [CAPsMAN](./caps/)

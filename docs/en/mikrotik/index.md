@@ -11,7 +11,7 @@ This section serves as a hub for practical guides to MikroTik.
 ## Guides
 
 ### Network features
-- [DNS and resolver](./dns/)
+- [DNS and resolver](./dns/doh-cloudflare)
 
 ### Advanced
 - [CAPsMAN](./caps/)
