@@ -1,89 +1,116 @@
 # CAPsMAN řízený upgrade zařízení
 
-Tento návod popisuje jednoduchý a bezpečný postup, jak hromadně nebo řízeně aktualizovat MikroTik zařízení spravovaná přes CAPsMAN. Cílem je minimalizovat výpadky, zachovat kontrolu nad pořadím a mít možnost rychle ověřit stav každého zařízení po upgradu.
+Tento postup slouží k hromadné aktualizaci MikroTik CAP zařízení spravovaných přes CAPsMAN. Cílem je dostat všechna CAP zařízení na stejnou verzi RouterOS s co nejmenším rušením provozu.
 
-## Kdy se to hodí
+## Kdy se tento postup hodí
 
-Tento postup je vhodný, když:
+Použij ho, když:
 
-- spravuješ více CAP zařízení z jednoho centra,
-- chceš upgrade provádět postupně, ne naráz,
-- potřebuješ mít jistotu, že po aktualizaci zařízení znovu naběhne a připojí se ke CAPsMAN,
-- chceš předem ověřit verze firmware i RouterOS.
+- spravuješ více CAP zařízení z jednoho CAPsMAN controlleru,
+- chceš upgrade provést centrálně,
+- potřebuješ mít kontrolu nad verzemi RouterOS,
+- nechceš upgradovat každé AP ručně zvlášť.
 
-## Co budeš potřebovat
+## Co je potřeba
 
-- MikroTik router s CAPsMAN nebo WiFi managementem.
-- Přístup do CLI přes WinBox, SSH nebo terminál v RouterOS.
-- Seznam zařízení, která chceš upgradovat.
-- Dostatek času na kontrolu každého kroku.
+- MikroTik CAPsMAN controller.
+- Přístup do CLI přes WinBox, SSH nebo terminál.
+- Správné RouterOS `.npk` balíčky pro všechna zařízení v síti.
+- Záloha konfigurace.
+- Krátké servisní okno, protože zařízení se při upgradu restartují.
 
-## Doporučený postup
+## Příprava
 
-### 1. Zjisti aktuální stav
+Než začneš, ověř:
 
-Než začneš cokoliv měnit, podívej se na verze RouterOS a firmware na controlleru i na CAP zařízeních.
+- verzi RouterOS na controlleru,
+- verzi RouterOS na CAP zařízeních,
+- architekturu jednotlivých zařízení,
+- stav CAPsMAN provisioning pravidel.
 
-```routeros
-/system resource print
-/system package print
-/interface wireless cap print
-```
-
-Pokud používáš novější WiFi stack nebo CAPsMAN verzi, zkontroluj i příslušné WiFi konfigurace a stav provisioning pravidel.
-
-### 2. Zálohuj konfiguraci
-
-Před upgradem si ulož zálohu konfigurace.
+Zálohuj konfiguraci:
 
 ```routeros
 /export file=before-capsman-upgrade
 /system backup save name=before-capsman-upgrade
 ```
 
-Ulož si i export do externího úložiště, pokud máš možnost. To je užitečné hlavně tehdy, když upgraduješ více zařízení najednou.
+## Postup upgradu
 
-### 3. Otestuj jeden kus
+### 1. Nahraj balíčky na CAPsMAN
 
-Nikdy nezačínej hromadně. Vyber jedno zařízení, které je nejméně kritické, a proveď nejdřív upgrade tam.
+Na CAPsMAN controller nahraj RouterOS balíčky do samostatné složky, například `/upgrade`.
 
-Důležité je sledovat:
+Důležité je, aby zde byly správné balíčky pro všechna zařízení, která chceš upgradovat.
 
-- jestli se zařízení po rebootu přihlásí zpět,
-- jestli CAPsMAN znovu nabídne správný profil,
-- jestli běží SSID a klienti se připojují,
-- jestli se neztratí provisioning.
+### 2. Nastav cestu k balíčkům
 
-### 4. Naplánuj pořadí
-
-Ideálně upgraduj zařízení v tomto pořadí:
-
-1. nejdřív controller,
-2. pak nejdůležitější CAPy s dohledem,
-3. nakonec méně důležitá nebo vzdálená zařízení.
-
-Pokud máš více AP v jedné lokalitě, nech vždy aspoň jedno funkční zařízení jako rezervu.
-
-### 5. Proveď upgrade RouterOS
-
-Na RouterOS obvykle použiješ běžný update balíčků.
+Na CAPsMANu nastav `package-path` na složku, kde jsou uložené upgrade balíčky.
 
 ```routeros
-/system package update check-for-updates
-/system package update install
+/caps-man manager set package-path=/upgrade
 ```
 
-Po instalaci se zařízení rebootuje.
+### 3. Nastav upgrade policy
+
+Vyber, jak přísně má CAPsMAN hlídat verze:
+
+- `suggest-same-version` — CAP se pokusí aktualizovat.
+- `require-same-version` — CAP musí mít stejnou verzi, jinak se nepřipojí.
+- `none` — CAPsMAN upgrade neřeší.
+
+Příklad:
 
 ```routeros
-/system reboot
+/caps-man manager set package-path=/upgrade upgrade-policy=suggest-same-version
 ```
 
-Po restartu znovu ověř stav.
+### 4. Nech CAPy připojit znovu
 
-### 6. Aktualizuj firmware po RouterOS
+Po nastavení se CAPy po reconnectu aktualizují a rebootují. Potom se znovu připojí ke controlleru.
 
-Po aktualizaci RouterOS často dává smysl dorovnat i firmware.
+### 5. Ověř stav
+
+Po upgradu zkontroluj:
+
+```routeros
+/system resource print
+/system package print
+/log print
+```
+
+Sleduj hlavně:
+
+- verzi RouterOS,
+- stav CAP připojení,
+- chyby v logu,
+- dostupnost Wi-Fi a klientů.
+
+## Bezpečnější způsob
+
+Nejlepší je neupgradovat všechno najednou. Doporučený postup je:
+
+1. controller,
+2. jeden testovací CAP,
+3. další CAPy po menších skupinách.
+
+Tím snížíš riziko, že se po upgrade něco rozbije na celé síti.
+
+## Když se CAP nepřipojí zpět
+
+Pokud se některé zařízení po upgradu nevrátí:
+
+- zkontroluj IP konektivitu,
+- podívej se do logu,
+- ověř správnost `package-path`,
+- zkontroluj, zda máš správný balíček pro danou architekturu,
+- zkus přísnost `upgrade-policy` snížit.
+
+Nejčastější problém bývá chybějící nebo špatný `.npk` balíček.
+
+## Firmware po upgradu
+
+Po RouterOS upgradu se často vyplatí zkontrolovat i firmware routerboardu:
 
 ```routeros
 /system routerboard print
@@ -91,69 +118,15 @@ Po aktualizaci RouterOS často dává smysl dorovnat i firmware.
 /system reboot
 ```
 
-U některých zařízení je potřeba rebootovat ještě jednou, aby se firmware skutečně aplikoval.
-
-### 7. Ověř CAPsMAN připojení
-
-Po upgradu zkontroluj, že CAPy jsou zpět online a CAPsMAN je vidí.
-
-```routeros
-/interface wireless registration-table print
-/interface wireless cap print
-```
-
-Pokud používáš CAPsMAN v nové architektuře WiFi, zkontroluj odpovídající sekce pro WiFi provisioning a konfigurace.
-
-## Bezpečný řízený upgrade
-
-Pokud nechceš, aby se všechno aktualizovalo najednou, dělej upgrade postupně ručně po jednom zařízení.
-
-Příklad doporučeného workflow:
-
-1. vypnout nebo odpojit jedno CAP zařízení,
-2. provést upgrade,
-3. nechat ho naběhnout,
-4. ověřit připojení ke controlleru,
-5. pokračovat dalším kusem.
-
-Tímto způsobem se vyhneš situaci, kdy se po hromadném restartu všechno rozbije najednou.
-
-## Co zkontrolovat po upgradu
-
-Po každém zařízení zkontroluj:
-
-- verzi RouterOS,
-- verzi firmware,
-- stav CAP připojení,
-- SSID a připojené klienty,
-- logy na chyby.
-
-```routeros
-/log print
-/interface wireless print
-/ip neighbor print
-```
-
-## Když se zařízení nepřipojí zpět
-
-Když se CAP po upgradu nevrátí do CAPsMAN:
-
-- ověř IP konektivitu,
-- zkontroluj konfiguraci CAP režimu,
-- podívej se do logu,
-- zkontroluj, jestli se nezměnila WiFi/CAPsMAN konfigurace po update,
-- případně vrať zálohu.
-
-Nejčastější problém bývá nesoulad mezi starou konfigurací a novou verzí RouterOS nebo WiFi balíčků.
-
-## Doporučení z praxe
-
-- Neupgraduj všechna zařízení najednou.
-- Zálohuj před každým větším zásahem.
-- Po každém upgradu ověř funkčnost ručně.
-- Měj připravený přístup na konzoli nebo přes LAN.
-- Pokud jde o produkční síť, dělej upgrade mimo špičku.
+U některých zařízení může být potřeba ještě jeden reboot.
 
 ## Shrnutí
 
-Řízený upgrade CAPsMAN zařízení je hlavně o pořadí, záloze a průběžné kontrole. Když půjdeš po jednom zařízení a po každém kroku ověříš stav, výrazně snížíš riziko výpadku celé WiFi sítě.
+Hromadný upgrade přes CAPsMAN funguje nejlépe, když:
+
+- máš správné balíčky,
+- nastavíš správný `package-path`,
+- zvolíš vhodnou `upgrade-policy`,
+- ověříš stav po každém kroku.
+
+Nejbezpečnější je postupovat po menších skupinách a mít připravenou zálohu.
