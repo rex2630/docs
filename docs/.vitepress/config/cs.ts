@@ -86,6 +86,16 @@ export const cs = {
             { text: "Cloudflare DoH", link: "/cs/mikrotik/mikrotik-doh-cloudflare" },
           ],
         },
+        {
+          text: "CAPsMAN",
+          items: [
+            { text: "Úvod", link: "/cs/mikrotik/index-capsman" },
+            { text: "Příprava", link: "/cs/mikrotik/capsman-prep" },
+            { text: "Konfigurace", link: "/cs/mikrotik/capsman-config" },
+            { text: "VLAN", link: "/cs/mikrotik/capsman-vlan" },
+            { text: "Troubleshooting", link: "/cs/mikrotik/capsman-troubleshooting" },
+          ],
+        },
       ],
     },
   },
