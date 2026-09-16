@@ -8,7 +8,7 @@ Praktyczne i przystępne poradniki dotyczące codziennych technologii. Niezależ
 
 Przejście z Windowsa, wybór dystrybucji, instalacja Linuxa lub szukanie zamienników znanych aplikacji.
 
-[Przeglądaj poradniki o Linuxie →](/pl/linux/)
+[Przeglądaj poradniki o Linuxie →](/pl/linux/overview/)
 
 ### MikroTik
 

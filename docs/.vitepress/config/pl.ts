@@ -35,7 +35,7 @@ export const pl = {
 
     nav: [
       { text: "Strona główna", link: "/pl/" },
-      { text: "Linux", link: "/pl/linux/" },
+      { text: "Linux", link: "/pl/linux/overview/" },
       { text: "Mikrotik", link: "/pl/mikrotik/" },
     ],
   },

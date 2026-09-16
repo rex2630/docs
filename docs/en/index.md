@@ -8,7 +8,7 @@ Practical, approachable guides for everyday technology. Whether you are switchin
 
 Moving away from Windows, choosing a distribution, installing Linux, or finding alternatives to familiar applications.
 
-[Browse Linux guides →](/en/linux/)
+[Browse Linux guides →](/en/linux/overview/)
 
 ### MikroTik
 

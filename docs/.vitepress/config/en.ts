@@ -10,7 +10,7 @@ export const en = {
     },
     nav: [
       { text: 'Home', link: '/en/' },
-      { text: "Linux", link: "/en/linux/" },
+      { text: "Linux", link: "/en/linux/overview/" },
       { text: "Mikrotik", link: "/en/mikrotik/" },
     ],
   },

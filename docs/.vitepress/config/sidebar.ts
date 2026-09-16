@@ -21,8 +21,7 @@ export const sidebarOptions: VitePressSidebarOptions[] = locales.flatMap((locale
     documentRootPath: `/docs/${locale}`,
     scanStartPath: "linux",
     resolvePath: `/${locale}/linux/`,
-    rootGroupText: "Linux",
-    includeRootIndexFile: true,
+    includeFolderIndexFile: true,
   },
   {
     ...sharedOptions,

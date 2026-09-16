@@ -8,7 +8,7 @@ Praktické a srozumitelné návody pro každodenní technologie. Ať už přech�
 
 Přechod z Windows, výběr distribuce, instalace Linuxu nebo hledání náhrad za známé aplikace.
 
-[Procházet návody pro Linux →](/cs/linux/)
+[Procházet návody pro Linux →](/cs/linux/overview/)
 
 ### MikroTik
 

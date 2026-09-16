@@ -46,7 +46,7 @@ export const cs = {
 
     nav: [
       { text: "Domů", link: "/cs/" },
-      { text: "Linux", link: "/cs/linux/" },
+      { text: "Linux", link: "/cs/linux/overview/" },
       { text: "Mikrotik", link: "/cs/mikrotik/" },
     ],
   },
