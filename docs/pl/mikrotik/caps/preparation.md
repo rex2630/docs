@@ -1,5 +1,7 @@
 ---
 title: Planowanie częstotliwości i kanałów
+order: 20
+sidebarTitle: Przygotowanie
 description: Praktyczny przegląd, jak rozsądnie ustawić 2.4 GHz i 5 GHz dla sieci CAPsMAN.
 ---
 

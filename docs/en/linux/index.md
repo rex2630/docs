@@ -1,5 +1,7 @@
 ---
 title: Quick Guide to Switching to Linux
+order: 0
+sidebarTitle: Quick Start
 description: Moving from Windows to Linux? Here’s everything you need to know to get started.
 ---
 
@@ -15,10 +17,10 @@ Think of a Linux distribution like an edition of Windows — the same core syste
 
 | Distribution | Stability | Software freshness | Best for | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Medium | Complete beginners | [Installation guide →](/en/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Medium | People switching from Windows | [Installation guide →](/en/linux/install-mint) |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very up to date | Gamers & developers | [Installation guide →](/en/linux/install-fedora) |
-| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Latest packages | Gamers, developers, and advanced users | [Installation guide →](/en/linux/install-cachyos) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Medium | Complete beginners | [Installation guide →](/en/linux/installation/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Medium | People switching from Windows | [Installation guide →](/en/linux/installation/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Very up to date | Gamers & developers | [Installation guide →](/en/linux/installation/install-fedora) |
+| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Latest packages | Gamers, developers, and advanced users | [Installation guide →](/en/linux/installation/install-cachyos) |
 
 ::: tip Not sure which one to pick?
 If you want something that just “works” right after installation and feels familiar coming from Windows, choose **Linux Mint**. It has a taskbar, app menu, and file manager that will feel very comfortable for new Linux users.

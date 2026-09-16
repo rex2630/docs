@@ -1,3 +1,8 @@
+---
+order: 50
+sidebarTitle: Řízený upgrade
+---
+
 # CAPsMAN řízený upgrade zařízení
 
 Tento postup slouží k hromadné aktualizaci MikroTik CAP zařízení spravovaných přes CAPsMAN. Cílem je dostat všechna CAP zařízení na stejnou verzi RouterOS s co nejmenším rušením provozu.

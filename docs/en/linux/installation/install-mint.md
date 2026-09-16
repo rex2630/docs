@@ -1,5 +1,7 @@
 ---
 title: Installing Linux Mint
+order: 10
+sidebarTitle: Linux Mint
 description: Step-by-step guide to installing Linux Mint — the most beginner-friendly Linux distribution for Windows switchers.
 ---
 
@@ -209,5 +211,5 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 ::: tip You're done! 🎉
-Linux Mint is installed and ready. Head over to the [App Alternatives](/en/linux/alternatives) page to find replacements for your favourite Windows apps.
+Linux Mint is installed and ready. Head over to the [App Alternatives](/en/linux/software/alternatives) page to find replacements for your favourite Windows apps.
 :::

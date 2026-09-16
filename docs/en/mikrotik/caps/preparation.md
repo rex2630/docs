@@ -1,5 +1,7 @@
 ---
 title: Frequency and Channel Planning
+order: 20
+sidebarTitle: Preparation
 description: Practical overview of how to set up 2.4 GHz and 5 GHz sensibly for a CAPsMAN network.
 ---
 

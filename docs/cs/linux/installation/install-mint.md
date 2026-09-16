@@ -1,5 +1,7 @@
 ---
 title: Instalace Linux Mint
+order: 10
+sidebarTitle: Linux Mint
 description: Podrobný průvodce instalací Linux Mint — nejpřívětivější linuxové distribuce pro přecházející z Windows.
 ---
 
@@ -208,5 +210,5 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 ::: tip Hotovo! 🎉
-Linux Mint je nainstalován a připraven. Přejdi na stránku [Alternativy aplikací](/cs/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
+Linux Mint je nainstalován a připraven. Přejdi na stránku [Alternativy aplikací](/cs/linux/software/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
 :::

@@ -1,5 +1,7 @@
 ---
 title: Troubleshooting CAPsMAN
+order: 60
+sidebarTitle: Troubleshooting
 description: The most common issues when deploying CAPsMAN in RouterOS 7+ and quick checks to solve them.
 ---
 

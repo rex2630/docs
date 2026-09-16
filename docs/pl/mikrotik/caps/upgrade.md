@@ -1,3 +1,8 @@
+---
+order: 50
+sidebarTitle: Kontrolowany upgrade
+---
+
 # CAPsMAN zarządzany upgrade urządzeń
 
 Ta procedura służy do zbiorczej aktualizacji urządzeń MikroTik CAP zarządzanych przez CAPsMAN. Celem jest doprowadzenie wszystkich urządzeń CAP do tej samej wersji RouterOS przy jak najmniejszym wpływie na działanie sieci.

@@ -1,5 +1,7 @@
 ---
 title: Installing Fedora KDE
+order: 30
+sidebarTitle: Fedora
 description: A guide to installing Fedora KDE Plasma — a modern Linux distribution ideal for gamers and developers.
 ---
 

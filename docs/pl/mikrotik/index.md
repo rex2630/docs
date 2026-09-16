@@ -15,7 +15,3 @@ Ta sekcja służy jako punkt startowy do praktycznych poradników dotyczących M
 
 ### Zaawansowane
 - [CAPsMAN](./caps/)
-
-## Uwaga
-
-Poradniki są pisane praktycznie, z naciskiem na typowe zastosowania w sieciach domowych i małych firmach. Jeśli chcesz, mogę od razu przygotować też poszczególne podstrony w tym samym stylu.

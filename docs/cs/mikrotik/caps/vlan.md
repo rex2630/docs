@@ -1,5 +1,7 @@
 ---
 title: VLANy a více SSID
+order: 40
+sidebarTitle: VLAN
 description: Nastavení VLAN, více SSID a management VLAN pro CAPsMAN v RouterOS 7+.
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: Průvodce rychlým přechodem na Linux
+order: 0
+sidebarTitle: Rychlý přechod
 description: Přecházíš z Windows na Linux? Tady je vše, co potřebuješ vědět pro začátek.
 ---
 
@@ -15,10 +17,10 @@ Představ si linuxovou distribuci jako edici Windows — stejné jádro, jiný z
 
 | Distribuce | Stabilita | Čerstvost softwaru | Nejlepší pro | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Střední | Úplné začátečníky | [Průvodce instalací →](/cs/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Střední | Přecházející z Windows | [Průvodce instalací →](/cs/linux/install-mint) |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Velmi aktuální | Hráče & vývojáře | [Průvodce instalací →](/cs/linux/install-fedora) |
-| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Nejnovější verze | Hráče, vývojáře a pokročilé uživatele | [Průvodce instalací →](/cs/linux/install-cachyos) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Střední | Úplné začátečníky | [Průvodce instalací →](/cs/linux/installation/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Střední | Přecházející z Windows | [Průvodce instalací →](/cs/linux/installation/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Velmi aktuální | Hráče & vývojáře | [Průvodce instalací →](/cs/linux/installation/install-fedora) |
+| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Nejnovější verze | Hráče, vývojáře a pokročilé uživatele | [Průvodce instalací →](/cs/linux/installation/install-cachyos) |
 
 ::: tip Nevíš, kterou si vybrat?
 Pokud chceš něco, co prostě „funguje" hned po instalaci a bude ti připadat povědomé, zvol **Linux Mint**. Má hlavní panel, nabídku Start a správce souborů, které ti budou připadat jako doma po přechodu z Windows.

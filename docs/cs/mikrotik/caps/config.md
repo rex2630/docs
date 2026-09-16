@@ -1,5 +1,7 @@
 ---
 title: Základní konfigurace CAPsMAN
+order: 30
+sidebarTitle: Konfigurace
 description: Základní nastavení CAPsMAN v RouterOS 7+ včetně managera, security, datapathu a provisioning.
 ---
 

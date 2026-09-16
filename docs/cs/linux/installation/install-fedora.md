@@ -1,5 +1,7 @@
 ---
 title: Instalace Fedory KDE
+order: 30
+sidebarTitle: Fedora
 description: Průvodce instalací Fedory KDE Plasma — moderní linuxová distribuce ideální pro hráče a vývojáře.
 ---
 
@@ -287,5 +289,5 @@ Způsobeno rychlým startem Windows. Ve Windows:
 **Ovládací panely → Možnosti napájení → Nastavení tlačítek napájení → odškrtni Zapnout rychlé spuštění**
 
 ::: tip Hotovo! 🎉
-Fedora KDE je nainstalována a připravena k použití. Přejdi na stránku [Alternativy aplikací](/cs/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
+Fedora KDE je nainstalována a připravena k použití. Přejdi na stránku [Alternativy aplikací](/cs/linux/software/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
 :::

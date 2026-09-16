@@ -1,5 +1,7 @@
 ---
 title: Jak nainstalovat CachyOS
+order: 40
+sidebarTitle: CachyOS
 description: Jednoduchý průvodce instalací CachyOS pro uživatele přecházející z Windows.
 ---
 

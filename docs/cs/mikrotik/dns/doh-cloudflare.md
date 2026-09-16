@@ -1,5 +1,6 @@
 ---
 title: MikroTik DoH s Cloudflare
+sidebarTitle: Cloudflare DoH
 description: Nastavení DNS over HTTPS na MikroTik RouterOS s Cloudflare
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: How to Install CachyOS
+order: 40
+sidebarTitle: CachyOS
 description: A simple CachyOS installation guide for people switching from Windows.
 ---
 

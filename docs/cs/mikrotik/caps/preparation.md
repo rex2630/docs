@@ -1,5 +1,7 @@
 ---
 title: Plánování frekvencí a kanálů
+order: 20
+sidebarTitle: Příprava
 description: Praktický přehled, jak rozumně nastavit 2.4 GHz a 5 GHz pro CAPsMAN síť.
 ---
 

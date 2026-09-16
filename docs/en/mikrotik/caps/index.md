@@ -1,5 +1,7 @@
 ---
 title: MikroTik CAPsMAN on RouterOS 7+
+order: 10
+sidebarTitle: Introduction
 description: An introductory hub and overview of a complete CAPsMAN guide for RouterOS 7+.
 ---
 

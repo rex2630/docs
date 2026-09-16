@@ -1,5 +1,7 @@
 ---
 title: Podstawowa konfiguracja CAPsMAN
+order: 30
+sidebarTitle: Konfiguracja
 description: Podstawowe ustawienie CAPsMAN w RouterOS 7+ obejmujące managera, security, datapath i provisioning.
 ---
 

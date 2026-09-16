@@ -1,5 +1,7 @@
 ---
 title: Troubleshooting CAPsMAN
+order: 60
+sidebarTitle: Troubleshooting
 description: Nejčastější problémy při nasazení CAPsMAN v RouterOS 7+ a rychlé kontroly, jak je vyřešit.
 ---
 

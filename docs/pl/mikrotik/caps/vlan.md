@@ -1,5 +1,7 @@
 ---
 title: VLAN-y i wiele SSID
+order: 40
+sidebarTitle: VLAN
 description: Konfiguracja VLAN-ów, wielu SSID i management VLAN dla CAPsMAN w RouterOS 7+.
 ---
 

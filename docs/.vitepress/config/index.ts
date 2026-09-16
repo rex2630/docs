@@ -1,9 +1,11 @@
 import { defineConfig } from "vitepress";
+import { withSidebar } from "vitepress-sidebar";
 import { en } from "./en.ts";
 import { cs } from "./cs.ts";
 import { pl } from "./pl.ts";
+import { sidebarOptions } from "./sidebar.ts";
 
-export default defineConfig({
+export default defineConfig(withSidebar({
   base: "/docs/",
   lastUpdated: true,
   locales: {
@@ -18,4 +20,4 @@ export default defineConfig({
       ];
     }
   },
-});
+}, sidebarOptions));

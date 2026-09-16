@@ -1,5 +1,7 @@
 ---
 title: Instalacja Fedory KDE
+order: 30
+sidebarTitle: Fedora
 description: Przewodnik po instalacji Fedory KDE Plasma — nowoczesnej dystrybucji Linux idealnej dla graczy i programistów.
 ---
 

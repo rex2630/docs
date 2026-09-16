@@ -49,55 +49,5 @@ export const cs = {
       { text: "Linux", link: "/cs/linux/" },
       { text: "Mikrotik", link: "/cs/mikrotik/" },
     ],
-    sidebar: {
-      "/cs/linux/": [
-        {
-          text: "Linux",
-          items: [
-            { text: "Rychlý přechod", link: "/cs/linux/" },
-          ],
-        },
-        {
-          text: "Průvodci instalací",
-          items: [
-            { text: "Linux Mint", link: "/cs/linux/install-mint" },
-            { text: "Ubuntu", link: "/cs/linux/install-ubuntu" },
-            { text: "Fedora", link: "/cs/linux/install-fedora" },
-            { text: "CachyOS", link: "/cs/linux/install-cachyos" },
-          ],
-        },
-        {
-          text: "Software",
-          items: [
-            { text: "Alternativy k Windows aplikacím", link: "/cs/linux/alternatives" },
-          ],
-        },
-        {
-          text: "Souborové systémy",
-          items: [
-            { text: "Převod NTFS na Btrfs", link: "/cs/linux/ntfs-to-btrfs" },
-          ],
-        },
-      ],
-      "/cs/mikrotik/": [
-        {
-          text: "DNS",
-          items: [
-            { text: "Cloudflare DoH", link: "/cs/mikrotik/dns/doh-cloudflare" },
-          ],
-        },
-        {
-          text: "CAPsMAN",
-          items: [
-            { text: "Úvod", link: "/cs/mikrotik/caps/" },
-            { text: "Příprava", link: "/cs/mikrotik/caps/preparation" },
-            { text: "Konfigurace", link: "/cs/mikrotik/caps/config" },
-            { text: "VLAN", link: "/cs/mikrotik/caps/vlan" },
-            { text: "Řízený upgrade", link: "/cs/mikrotik/caps/upgrade" },
-            { text: "Troubleshooting", link: "/cs/mikrotik/caps/troubleshooting" },
-          ],
-        },
-      ],
-    },
   },
 };

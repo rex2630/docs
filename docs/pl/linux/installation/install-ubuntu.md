@@ -1,5 +1,7 @@
 ---
 title: Instalacja Ubuntu
+order: 20
+sidebarTitle: Ubuntu
 description: Przewodnik krok po kroku dotyczący instalacji Ubuntu — solidna, przyjazna dla początkujących dystrybucja Linuxa wspierana przez Canonical.
 ---
 
@@ -204,5 +206,5 @@ sudo apt install firefox
 ```
 
 ::: tip Gotowe! 🎉
-Ubuntu jest zainstalowane i gotowe. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
+Ubuntu jest zainstalowane i gotowe. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/software/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
 :::

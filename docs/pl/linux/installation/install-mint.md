@@ -1,5 +1,7 @@
 ---
 title: Instalacja Linux Mint
+order: 10
+sidebarTitle: Linux Mint
 description: Przewodnik krok po kroku dotyczący instalacji Linux Mint — najbardziej przyjazna dla początkujących dystrybucja Linuxa dla osób przechodzących z Windows.
 ---
 
@@ -209,5 +211,5 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
 ::: tip Gotowe! 🎉
-Linux Mint jest zainstalowany i gotowy. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
+Linux Mint jest zainstalowany i gotowy. Przejdź na stronę [Alternatywy aplikacji](/pl/linux/software/alternatives), aby znaleźć zamienniki dla swoich ulubionych aplikacji Windows.
 :::

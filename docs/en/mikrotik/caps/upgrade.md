@@ -1,3 +1,8 @@
+---
+order: 50
+sidebarTitle: Managed upgrade
+---
+
 # CAPsMAN Managed Device Upgrade
 
 This procedure is used for bulk updating MikroTik CAP devices managed through CAPsMAN. The goal is to bring all CAP devices to the same RouterOS version with as little disruption as possible.

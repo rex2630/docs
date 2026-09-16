@@ -1,5 +1,7 @@
 ---
 title: Installing Ubuntu
+order: 20
+sidebarTitle: Ubuntu
 description: Step-by-step guide to installing Ubuntu — a solid, beginner-friendly Linux distribution backed by Canonical.
 ---
 
@@ -204,5 +206,5 @@ sudo apt install firefox
 ```
 
 ::: tip You're done! 🎉
-Ubuntu is installed and ready. Head over to the [App Alternatives](/en/linux/alternatives) page to find replacements for your favourite Windows apps.
+Ubuntu is installed and ready. Head over to the [App Alternatives](/en/linux/software/alternatives) page to find replacements for your favourite Windows apps.
 :::

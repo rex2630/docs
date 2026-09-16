@@ -1,5 +1,7 @@
 ---
 title: Instalace Ubuntu
+order: 20
+sidebarTitle: Ubuntu
 description: Podrobný průvodce instalací Ubuntu — stabilní distribuce pro začátečníky od Canonical.
 ---
 
@@ -190,5 +192,5 @@ sudo apt install firefox
 ```
 
 ::: tip Hotovo! 🎉
-Ubuntu je nainstalováno a připraveno. Přejdi na stránku [Alternativy aplikací](/cs/linux/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
+Ubuntu je nainstalováno a připraveno. Přejdi na stránku [Alternativy aplikací](/cs/linux/software/alternatives) a najdi náhrady za své oblíbené Windows aplikace.
 :::

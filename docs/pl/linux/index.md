@@ -1,5 +1,7 @@
 ---
 title: Szybki przewodnik po przejściu na Linuxa
+order: 0
+sidebarTitle: Szybki start
 description: Przechodzisz z Windowsa na Linuxa? Tutaj znajdziesz wszystko, co trzeba wiedzieć na start.
 ---
 
@@ -15,10 +17,10 @@ Pomyśl o dystrybucji Linuksa jak o edycji Windowsa — to samo jądro, ale inne
 
 | Dystrybucja | Stabilność | Świeżość oprogramowania | Najlepsza dla | |
 |---|---|---|---|---|
-| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Średnia | Zupełnych początkujących | [Przewodnik instalacji →](/pl/linux/install-ubuntu) |
-| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Średnia | Osób przechodzących z Windowsa | [Przewodnik instalacji →](/pl/linux/install-mint) |
-| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Bardzo aktualna | Graczy i deweloperów | [Przewodnik instalacji →](/pl/linux/install-fedora) |
-| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Najnowsze wersje | Graczy, deweloperów i zaawansowanych użytkowników | [Przewodnik instalacji →](/pl/linux/install-cachyos) |
+| [Ubuntu](https://ubuntu.com) | ⭐⭐⭐⭐⭐ | Średnia | Zupełnych początkujących | [Przewodnik instalacji →](/pl/linux/installation/install-ubuntu) |
+| [Linux Mint](https://linuxmint.com) | ⭐⭐⭐⭐⭐ | Średnia | Osób przechodzących z Windowsa | [Przewodnik instalacji →](/pl/linux/installation/install-mint) |
+| [Fedora](https://fedoraproject.org) | ⭐⭐⭐⭐ | Bardzo aktualna | Graczy i deweloperów | [Przewodnik instalacji →](/pl/linux/installation/install-fedora) |
+| [CachyOS](https://cachyos.org) | ⭐⭐⭐ | Najnowsze wersje | Graczy, deweloperów i zaawansowanych użytkowników | [Przewodnik instalacji →](/pl/linux/installation/install-cachyos) |
 
 ::: tip Nie wiesz, co wybrać?
 Jeśli chcesz czegoś, co po instalacji po prostu „działa” i będzie wydawało się znajome po Windowsie, wybierz **Linux Mint**. Ma panel, menu aplikacji i menedżer plików, które będą bardzo znajome dla nowych użytkowników.
